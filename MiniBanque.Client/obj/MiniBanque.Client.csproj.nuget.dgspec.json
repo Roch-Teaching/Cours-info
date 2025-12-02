@@ -1,0 +1,183 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/user/src/Mini-Banque/client/MiniBanque.Client/MiniBanque.Client/MiniBanque.Client.csproj": {}
+  },
+  "projects": {
+    "/home/user/src/Mini-Banque/client/MiniBanque.Client/MiniBanque.Client/MiniBanque.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/user/src/Mini-Banque/client/MiniBanque.Client/MiniBanque.Client/MiniBanque.Client.csproj",
+        "projectName": "MiniBanque.Client",
+        "projectPath": "/home/user/src/Mini-Banque/client/MiniBanque.Client/MiniBanque.Client/MiniBanque.Client.csproj",
+        "packagesPath": "/home/user/.nuget/packages/",
+        "outputPath": "/home/user/src/Mini-Banque/client/MiniBanque.Client/MiniBanque.Client/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "centralPackageVersionsManagementEnabled": true,
+        "configFilePaths": [
+          "/home/user/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0-desktop"
+        ],
+        "sources": {
+          "/usr/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0-desktop1.0": {
+            "targetAlias": "net9.0-desktop",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU1507"
+          ],
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0-desktop1.0": {
+          "targetAlias": "net9.0-desktop",
+          "dependencies": {
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.4.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Extensions.Logging.Console": {
+              "target": "Package",
+              "version": "[9.0.9, )",
+              "autoReferenced": true
+            },
+            "SkiaSharp.Skottie": {
+              "target": "Package",
+              "version": "[3.119.1, )",
+              "autoReferenced": true
+            },
+            "SkiaSharp.Views.Uno.WinUI": {
+              "target": "Package",
+              "version": "[3.119.1, )",
+              "autoReferenced": true
+            },
+            "Uno.Extensions.Core.WinUI": {
+              "target": "Package",
+              "version": "[6.2.3, )",
+              "autoReferenced": true
+            },
+            "Uno.Fonts.OpenSans": {
+              "target": "Package",
+              "version": "[2.7.1, )",
+              "autoReferenced": true
+            },
+            "Uno.Resizetizer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.11.1, )",
+              "autoReferenced": true
+            },
+            "Uno.Sdk.Extras": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.1.1, )",
+              "autoReferenced": true
+            },
+            "Uno.Settings.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.6.3, )",
+              "autoReferenced": true
+            },
+            "Uno.Toolkit.WinUI": {
+              "target": "Package",
+              "version": "[8.2.4, )",
+              "autoReferenced": true
+            },
+            "Uno.UI.Adapter.Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[6.3.62, )",
+              "autoReferenced": true
+            },
+            "Uno.UI.HotDesign": {
+              "target": "Package",
+              "version": "[1.16.109, )",
+              "autoReferenced": true
+            },
+            "Uno.WinUI": {
+              "target": "Package",
+              "version": "[6.3.62, )",
+              "autoReferenced": true
+            },
+            "Uno.WinUI.DevServer": {
+              "target": "Package",
+              "version": "[6.3.62, )",
+              "autoReferenced": true
+            },
+            "Uno.WinUI.Graphics2DSK": {
+              "target": "Package",
+              "version": "[6.3.62, )",
+              "autoReferenced": true
+            },
+            "Uno.WinUI.Lottie": {
+              "target": "Package",
+              "version": "[6.3.62, )",
+              "autoReferenced": true
+            },
+            "Uno.WinUI.Runtime.Skia.Linux.FrameBuffer": {
+              "target": "Package",
+              "version": "[6.3.62, )",
+              "autoReferenced": true
+            },
+            "Uno.WinUI.Runtime.Skia.MacOS": {
+              "target": "Package",
+              "version": "[6.3.62, )",
+              "autoReferenced": true
+            },
+            "Uno.WinUI.Runtime.Skia.Win32": {
+              "target": "Package",
+              "version": "[6.3.62, )",
+              "autoReferenced": true
+            },
+            "Uno.WinUI.Runtime.Skia.Wpf": {
+              "target": "Package",
+              "version": "[6.3.62, )",
+              "autoReferenced": true
+            },
+            "Uno.WinUI.Runtime.Skia.X11": {
+              "target": "Package",
+              "version": "[6.3.62, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.305/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
