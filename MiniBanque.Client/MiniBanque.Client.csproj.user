@@ -2,5 +2,24 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <UnoRemoteControlPort>15048</UnoRemoteControlPort>
+    <_UnoSelectedTargetFramework>net9.0-desktop</_UnoSelectedTargetFramework>
+    <ActiveDebugProfile>MiniBanque.Client (Desktop)</ActiveDebugProfile>
   </PropertyGroup>
+  <ItemGroup>
+    <Page Update="View\DashboardPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\HistoryPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\LoginPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\RegisterPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\TransferPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
 </Project>

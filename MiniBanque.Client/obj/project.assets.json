@@ -150,11 +150,11 @@
           }
         }
       },
-      "Microsoft.Extensions.Configuration/9.0.9": {
+      "Microsoft.Extensions.Configuration/9.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "9.0.9",
-          "Microsoft.Extensions.Primitives": "9.0.9"
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.11",
+          "Microsoft.Extensions.Primitives": "9.0.11"
         },
         "compile": {
           "lib/net9.0/Microsoft.Extensions.Configuration.dll": {
@@ -170,10 +170,10 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Configuration.Abstractions/9.0.9": {
+      "Microsoft.Extensions.Configuration.Abstractions/9.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Primitives": "9.0.9"
+          "Microsoft.Extensions.Primitives": "9.0.11"
         },
         "compile": {
           "lib/net9.0/Microsoft.Extensions.Configuration.Abstractions.dll": {
@@ -189,10 +189,10 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Configuration.Binder/9.0.9": {
+      "Microsoft.Extensions.Configuration.Binder/9.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "9.0.9"
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.11"
         },
         "compile": {
           "lib/net9.0/Microsoft.Extensions.Configuration.Binder.dll": {
@@ -317,10 +317,10 @@
           "buildTransitive/net6.0/Microsoft.Extensions.Configuration.UserSecrets.targets": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection/9.0.9": {
+      "Microsoft.Extensions.DependencyInjection/9.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.9"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.11"
         },
         "compile": {
           "lib/net9.0/Microsoft.Extensions.DependencyInjection.dll": {
@@ -336,7 +336,7 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.9": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.11": {
         "type": "package",
         "compile": {
           "lib/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
@@ -512,12 +512,12 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging/9.0.9": {
+      "Microsoft.Extensions.Logging/9.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection": "9.0.9",
-          "Microsoft.Extensions.Logging.Abstractions": "9.0.9",
-          "Microsoft.Extensions.Options": "9.0.9"
+          "Microsoft.Extensions.DependencyInjection": "9.0.11",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.11",
+          "Microsoft.Extensions.Options": "9.0.11"
         },
         "compile": {
           "lib/net9.0/Microsoft.Extensions.Logging.dll": {
@@ -533,10 +533,10 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/9.0.9": {
+      "Microsoft.Extensions.Logging.Abstractions/9.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.9"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.11"
         },
         "compile": {
           "lib/net9.0/Microsoft.Extensions.Logging.Abstractions.dll": {
@@ -552,17 +552,17 @@
           "buildTransitive/net8.0/Microsoft.Extensions.Logging.Abstractions.targets": {}
         }
       },
-      "Microsoft.Extensions.Logging.Configuration/9.0.9": {
+      "Microsoft.Extensions.Logging.Configuration/9.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Configuration": "9.0.9",
-          "Microsoft.Extensions.Configuration.Abstractions": "9.0.9",
-          "Microsoft.Extensions.Configuration.Binder": "9.0.9",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.9",
-          "Microsoft.Extensions.Logging": "9.0.9",
-          "Microsoft.Extensions.Logging.Abstractions": "9.0.9",
-          "Microsoft.Extensions.Options": "9.0.9",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "9.0.9"
+          "Microsoft.Extensions.Configuration": "9.0.11",
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.11",
+          "Microsoft.Extensions.Configuration.Binder": "9.0.11",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.11",
+          "Microsoft.Extensions.Logging": "9.0.11",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.11",
+          "Microsoft.Extensions.Options": "9.0.11",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "9.0.11"
         },
         "compile": {
           "lib/net9.0/Microsoft.Extensions.Logging.Configuration.dll": {
@@ -578,14 +578,14 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Logging.Console/9.0.9": {
+      "Microsoft.Extensions.Logging.Console/9.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.9",
-          "Microsoft.Extensions.Logging": "9.0.9",
-          "Microsoft.Extensions.Logging.Abstractions": "9.0.9",
-          "Microsoft.Extensions.Logging.Configuration": "9.0.9",
-          "Microsoft.Extensions.Options": "9.0.9"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.11",
+          "Microsoft.Extensions.Logging": "9.0.11",
+          "Microsoft.Extensions.Logging.Abstractions": "9.0.11",
+          "Microsoft.Extensions.Logging.Configuration": "9.0.11",
+          "Microsoft.Extensions.Options": "9.0.11"
         },
         "compile": {
           "lib/net9.0/Microsoft.Extensions.Logging.Console.dll": {
@@ -669,11 +669,11 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Options/9.0.9": {
+      "Microsoft.Extensions.Options/9.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.9",
-          "Microsoft.Extensions.Primitives": "9.0.9"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.11",
+          "Microsoft.Extensions.Primitives": "9.0.11"
         },
         "compile": {
           "lib/net9.0/Microsoft.Extensions.Options.dll": {
@@ -689,14 +689,14 @@
           "buildTransitive/net8.0/Microsoft.Extensions.Options.targets": {}
         }
       },
-      "Microsoft.Extensions.Options.ConfigurationExtensions/9.0.9": {
+      "Microsoft.Extensions.Options.ConfigurationExtensions/9.0.11": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "9.0.9",
-          "Microsoft.Extensions.Configuration.Binder": "9.0.9",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.9",
-          "Microsoft.Extensions.Options": "9.0.9",
-          "Microsoft.Extensions.Primitives": "9.0.9"
+          "Microsoft.Extensions.Configuration.Abstractions": "9.0.11",
+          "Microsoft.Extensions.Configuration.Binder": "9.0.11",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.11",
+          "Microsoft.Extensions.Options": "9.0.11",
+          "Microsoft.Extensions.Primitives": "9.0.11"
         },
         "compile": {
           "lib/net9.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {
@@ -712,7 +712,7 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "Microsoft.Extensions.Primitives/9.0.9": {
+      "Microsoft.Extensions.Primitives/9.0.11": {
         "type": "package",
         "compile": {
           "lib/net9.0/Microsoft.Extensions.Primitives.dll": {
@@ -1234,7 +1234,7 @@
           }
         }
       },
-      "Uno.Extensions.Core/6.2.3": {
+      "Uno.Extensions.Core/7.0.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
@@ -1261,7 +1261,7 @@
           "buildTransitive/Uno.Extensions.Core.targets": {}
         }
       },
-      "Uno.Extensions.Core.WinUI/6.2.3": {
+      "Uno.Extensions.Core.WinUI/7.0.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
@@ -1273,7 +1273,7 @@
           "System.Collections.Immutable": "8.0.0",
           "System.Text.Json": "8.0.5",
           "System.Threading.Tasks.Extensions": "4.5.4",
-          "Uno.Extensions.Core": "6.2.3",
+          "Uno.Extensions.Core": "7.0.4",
           "Uno.WinUI": "6.0.465",
           "Uno.WinUI.Graphics2DSK": "6.0.465",
           "Uno.WinUI.Lottie": "6.0.465"
@@ -1305,7 +1305,7 @@
           "buildTransitive/Uno.Fonts.Fluent.props": {}
         }
       },
-      "Uno.Fonts.OpenSans/2.7.1": {
+      "Uno.Fonts.OpenSans/2.8.1": {
         "type": "package",
         "compile": {
           "lib/net7.0/Uno.Fonts.OpenSans.dll": {
@@ -1334,7 +1334,7 @@
           }
         }
       },
-      "Uno.Foundation/6.3.62": {
+      "Uno.Foundation/6.4.106": {
         "type": "package",
         "compile": {
           "lib/net9.0/Uno.Foundation.dll": {}
@@ -1346,7 +1346,7 @@
           "buildTransitive/Uno.Foundation.props": {}
         }
       },
-      "Uno.Foundation.Logging/6.3.62": {
+      "Uno.Foundation.Logging/6.4.106": {
         "type": "package",
         "compile": {
           "lib/net9.0/Uno.Foundation.Logging.dll": {
@@ -1359,7 +1359,7 @@
           }
         }
       },
-      "Uno.Resizetizer/1.11.1": {
+      "Uno.Resizetizer/1.12.1": {
         "type": "package",
         "build": {
           "build/Uno.Resizetizer.targets": {}
@@ -1372,13 +1372,13 @@
           "buildTransitive/Uno.Sdk.Extras.targets": {}
         }
       },
-      "Uno.Settings.DevServer/1.6.3": {
+      "Uno.Settings.DevServer/1.7.1": {
         "type": "package",
         "build": {
           "buildTransitive/Uno.Settings.DevServer.targets": {}
         }
       },
-      "Uno.Themes.WinUI/5.7.3": {
+      "Uno.Themes.WinUI/6.0.2": {
         "type": "package",
         "dependencies": {
           "Uno.Core.Extensions.Disposables": "4.0.1",
@@ -1387,12 +1387,12 @@
           "Uno.WinUI": "5.0.19"
         },
         "compile": {
-          "lib/net8.0/Uno.Themes.WinUI.dll": {
+          "lib/net9.0/Uno.Themes.WinUI.dll": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/net8.0/Uno.Themes.WinUI.dll": {
+          "lib/net9.0/Uno.Themes.WinUI.dll": {
             "related": ".pdb"
           }
         },
@@ -1400,7 +1400,7 @@
           "buildTransitive/Uno.Themes.WinUI.targets": {}
         }
       },
-      "Uno.Toolkit/8.2.4": {
+      "Uno.Toolkit/8.3.2": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Uno.Toolkit.dll": {
@@ -1413,22 +1413,22 @@
           }
         }
       },
-      "Uno.Toolkit.WinUI/8.2.4": {
+      "Uno.Toolkit.WinUI/8.3.2": {
         "type": "package",
         "dependencies": {
           "Uno.Core.Extensions.Collections": "4.0.1",
           "Uno.Core.Extensions.Logging": "4.0.1",
           "Uno.Core.Extensions.Logging.Singleton": "4.0.1",
-          "Uno.Toolkit": "8.2.4",
-          "Uno.WinUI": "6.0.465"
+          "Uno.Toolkit": "8.3.2",
+          "Uno.WinUI": "6.2.58"
         },
         "compile": {
-          "lib/net8.0/Uno.Toolkit.WinUI.dll": {
+          "lib/net9.0/Uno.Toolkit.WinUI.dll": {
             "related": ".pdb"
           }
         },
         "runtime": {
-          "lib/net8.0/Uno.Toolkit.WinUI.dll": {
+          "lib/net9.0/Uno.Toolkit.WinUI.dll": {
             "related": ".pdb"
           }
         },
@@ -1436,12 +1436,12 @@
           "buildTransitive/Uno.Toolkit.WinUI.targets": {}
         }
       },
-      "Uno.UI.Adapter.Microsoft.Extensions.Logging/6.3.62": {
+      "Uno.UI.Adapter.Microsoft.Extensions.Logging/6.4.106": {
         "type": "package",
         "dependencies": {
           "Uno.Core.Extensions.Logging": "4.0.1",
           "Uno.Core.Extensions.Logging.Singleton": "4.0.1",
-          "Uno.Foundation.Logging": "6.3.62"
+          "Uno.Foundation.Logging": "6.4.106"
         },
         "compile": {
           "lib/net9.0/Uno.UI.Adapter.Microsoft.Extensions.Logging.dll": {
@@ -1454,61 +1454,48 @@
           }
         }
       },
-      "Uno.UI.HotDesign/1.16.109": {
+      "Uno.UI.App.Mcp/1.0.7": {
         "type": "package",
-        "dependencies": {
-          "CommunityToolkit.Mvvm": "8.4.0",
-          "Microsoft.Extensions.Logging": "9.0.8",
-          "Uno.Core.Extensions.Logging.Singleton": "4.1.1",
-          "Uno.Themes.WinUI": "5.7.3",
-          "Uno.Toolkit.WinUI": "8.2.1",
-          "Uno.WinUI": "6.3.27",
-          "Uno.WinUI.DevServer": "6.3.27",
-          "Uno.WinUI.DevServer.Messaging": "6.3.27"
-        },
         "compile": {
-          "lib/net9.0/Uno.UI.HotDesign.Abstractions.dll": {
+          "lib/net9.0/Uno.UI.App.Mcp.Client.dll": {
+            "related": ".deps.json;.pdb"
+          },
+          "lib/net9.0/Uno.UI.App.Mcp.Messages.dll": {
             "related": ".pdb"
-          },
-          "lib/net9.0/Uno.UI.HotDesign.Client.Core.dll": {
-            "related": ".pdb"
-          },
-          "lib/net9.0/Uno.UI.HotDesign.Client.dll": {
-            "related": ".Core.pdb;.pdb"
-          },
-          "lib/net9.0/Uno.UI.HotDesign.CommunityToolkit.dll": {
-            "related": ".pdb"
-          },
-          "lib/net9.0/Uno.UI.HotDesign.Hierarchy.dll": {
-            "related": ".pdb"
-          },
-          "lib/net9.0/Uno.UI.HotDesign.Messaging.dll": {
-            "related": ".pdb"
-          },
-          "lib/net9.0/Uno.UI.HotDesign.PropertyGrid.dll": {
-            "related": ".pdb"
-          },
-          "lib/net9.0/Uno.UI.HotDesign.Stories.dll": {
-            "related": ".pdb"
-          },
-          "lib/net9.0/Uno.UI.HotDesign.Toolbox.dll": {
-            "related": ".pdb"
-          },
-          "lib/net9.0/Uno.UI.HotDesign.Xaml.Interactions.dll": {
-            "related": ".pdb"
-          },
-          "lib/net9.0/Uno.UI.HotDesign.Xaml.Interactivity.dll": {
-            "related": ".pdb"
-          },
-          "lib/net9.0/Uno.UI.HotDesign.Xaml.dll": {
-            "related": ".Interactions.pdb;.Interactivity.pdb;.pdb"
-          },
-          "lib/net9.0/Uno.UI.HotDesign.dll": {
-            "related": ".Abstractions.pdb;.Client.Core.pdb;.Client.pdb;.CommunityToolkit.pdb;.deps.json;.Hierarchy.pdb;.Messaging.pdb;.pdb;.PropertyGrid.pdb;.Stories.pdb;.Toolbox.pdb;.Xaml.Interactions.pdb;.Xaml.Interactivity.pdb;.Xaml.pdb"
           }
         },
         "runtime": {
+          "lib/net9.0/Uno.UI.App.Mcp.Client.dll": {
+            "related": ".deps.json;.pdb"
+          },
+          "lib/net9.0/Uno.UI.App.Mcp.Messages.dll": {
+            "related": ".pdb"
+          }
+        },
+        "build": {
+          "buildTransitive/Uno.UI.App.Mcp.targets": {}
+        }
+      },
+      "Uno.UI.HotDesign/1.17.155": {
+        "type": "package",
+        "dependencies": {
+          "CommunityToolkit.Mvvm": "8.4.0",
+          "Microsoft.Extensions.Logging": "9.0.11",
+          "SkiaSharp.Views.Uno.WinUI": "3.119.1",
+          "Uno.Core.Extensions.Logging.Singleton": "4.1.1",
+          "Uno.Themes.WinUI": "6.0.2",
+          "Uno.Toolkit.WinUI": "8.3.2",
+          "Uno.WinUI": "6.4.106",
+          "Uno.WinUI.DevServer": "6.4.106",
+          "Uno.WinUI.DevServer.Messaging": "6.4.106",
+          "Uno.WinUI.Lottie": "6.4.106"
+        },
+        "compile": {
+          "lib/net9.0/Uno.AI.XamlGeneration.Contracts.dll": {},
           "lib/net9.0/Uno.UI.HotDesign.Abstractions.dll": {
+            "related": ".pdb"
+          },
+          "lib/net9.0/Uno.UI.HotDesign.Chat.dll": {
             "related": ".pdb"
           },
           "lib/net9.0/Uno.UI.HotDesign.Client.Core.dll": {
@@ -1545,11 +1532,57 @@
             "related": ".Interactions.pdb;.Interactivity.pdb;.pdb"
           },
           "lib/net9.0/Uno.UI.HotDesign.dll": {
-            "related": ".Abstractions.pdb;.Client.Core.pdb;.Client.pdb;.CommunityToolkit.pdb;.deps.json;.Hierarchy.pdb;.Messaging.pdb;.pdb;.PropertyGrid.pdb;.Stories.pdb;.Toolbox.pdb;.Xaml.Interactions.pdb;.Xaml.Interactivity.pdb;.Xaml.pdb"
+            "related": ".Abstractions.pdb;.Chat.pdb;.Client.Core.pdb;.Client.pdb;.CommunityToolkit.pdb;.deps.json;.Hierarchy.pdb;.Messaging.pdb;.pdb;.PropertyGrid.pdb;.Stories.pdb;.Toolbox.pdb;.Xaml.Interactions.pdb;.Xaml.Interactivity.pdb;.Xaml.pdb"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Uno.AI.XamlGeneration.Contracts.dll": {},
+          "lib/net9.0/Uno.UI.HotDesign.Abstractions.dll": {
+            "related": ".pdb"
+          },
+          "lib/net9.0/Uno.UI.HotDesign.Chat.dll": {
+            "related": ".pdb"
+          },
+          "lib/net9.0/Uno.UI.HotDesign.Client.Core.dll": {
+            "related": ".pdb"
+          },
+          "lib/net9.0/Uno.UI.HotDesign.Client.dll": {
+            "related": ".Core.pdb;.pdb"
+          },
+          "lib/net9.0/Uno.UI.HotDesign.CommunityToolkit.dll": {
+            "related": ".pdb"
+          },
+          "lib/net9.0/Uno.UI.HotDesign.Hierarchy.dll": {
+            "related": ".pdb"
+          },
+          "lib/net9.0/Uno.UI.HotDesign.Messaging.dll": {
+            "related": ".pdb"
+          },
+          "lib/net9.0/Uno.UI.HotDesign.PropertyGrid.dll": {
+            "related": ".pdb"
+          },
+          "lib/net9.0/Uno.UI.HotDesign.Stories.dll": {
+            "related": ".pdb"
+          },
+          "lib/net9.0/Uno.UI.HotDesign.Toolbox.dll": {
+            "related": ".pdb"
+          },
+          "lib/net9.0/Uno.UI.HotDesign.Xaml.Interactions.dll": {
+            "related": ".pdb"
+          },
+          "lib/net9.0/Uno.UI.HotDesign.Xaml.Interactivity.dll": {
+            "related": ".pdb"
+          },
+          "lib/net9.0/Uno.UI.HotDesign.Xaml.dll": {
+            "related": ".Interactions.pdb;.Interactivity.pdb;.pdb"
+          },
+          "lib/net9.0/Uno.UI.HotDesign.dll": {
+            "related": ".Abstractions.pdb;.Chat.pdb;.Client.Core.pdb;.Client.pdb;.CommunityToolkit.pdb;.deps.json;.Hierarchy.pdb;.Messaging.pdb;.pdb;.PropertyGrid.pdb;.Stories.pdb;.Toolbox.pdb;.Xaml.Interactions.pdb;.Xaml.Interactivity.pdb;.Xaml.pdb"
           }
         },
         "build": {
-          "build/Uno.UI.HotDesign.props": {}
+          "build/Uno.UI.HotDesign.props": {},
+          "build/Uno.UI.HotDesign.targets": {}
         }
       },
       "Uno.Wasm.WebSockets/1.1.0": {
@@ -1565,10 +1598,10 @@
           }
         }
       },
-      "Uno.WinRT/6.3.62": {
+      "Uno.WinRT/6.4.106": {
         "type": "package",
         "dependencies": {
-          "Uno.Foundation": "6.3.62"
+          "Uno.Foundation": "6.4.106"
         },
         "compile": {
           "lib/net9.0/Uno.UI.Dispatching.dll": {},
@@ -1582,7 +1615,7 @@
           "buildTransitive/Uno.WinRT.props": {}
         }
       },
-      "Uno.WinUI/6.3.62": {
+      "Uno.WinUI/6.4.106": {
         "type": "package",
         "dependencies": {
           "System.Collections.Immutable": "1.3.1",
@@ -1591,8 +1624,8 @@
           "System.Runtime.InteropServices.WindowsRuntime": "4.3.0",
           "Uno.Diagnostics.Eventing": "2.0.1",
           "Uno.Fonts.Fluent": "2.6.1",
-          "Uno.Foundation.Logging": "6.3.62",
-          "Uno.WinRT": "6.3.62"
+          "Uno.Foundation.Logging": "6.4.106",
+          "Uno.WinRT": "6.4.106"
         },
         "compile": {
           "lib/net9.0/Uno.UI.Composition.dll": {},
@@ -1641,13 +1674,13 @@
           "buildTransitive/net9.0/uno.winui.targets": {}
         }
       },
-      "Uno.WinUI.DevServer/6.3.62": {
+      "Uno.WinUI.DevServer/6.4.106": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "13.0.3",
           "Uno.Wasm.WebSockets": "1.1.0",
-          "Uno.WinUI": "6.3.62",
-          "Uno.WinUI.DevServer.Messaging": "6.3.62"
+          "Uno.WinUI": "6.4.106",
+          "Uno.WinUI.DevServer.Messaging": "6.4.106"
         },
         "compile": {
           "lib/net9.0/Uno.UI.RemoteControl.dll": {
@@ -1664,7 +1697,7 @@
           "buildTransitive/Uno.WinUI.DevServer.targets": {}
         }
       },
-      "Uno.WinUI.DevServer.Messaging/6.3.62": {
+      "Uno.WinUI.DevServer.Messaging/6.4.106": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "13.0.3"
@@ -1680,11 +1713,11 @@
           }
         }
       },
-      "Uno.WinUI.Graphics2DSK/6.3.62": {
+      "Uno.WinUI.Graphics2DSK/6.4.106": {
         "type": "package",
         "dependencies": {
           "SkiaSharp": "3.119.0",
-          "Uno.WinUI": "6.3.62"
+          "Uno.WinUI": "6.4.106"
         },
         "compile": {
           "lib/net9.0/Uno.WinUI.Graphics2DSK.dll": {
@@ -1697,11 +1730,11 @@
           }
         }
       },
-      "Uno.WinUI.Lottie/6.3.62": {
+      "Uno.WinUI.Lottie/6.4.106": {
         "type": "package",
         "dependencies": {
           "System.Json": "4.7.1",
-          "Uno.WinUI": "6.3.62"
+          "Uno.WinUI": "6.4.106"
         },
         "compile": {
           "lib/net9.0/Uno.UI.Lottie.dll": {}
@@ -1713,10 +1746,10 @@
           "buildTransitive/Uno.WinUI.Lottie.targets": {}
         }
       },
-      "Uno.WinUI.Runtime.Skia/6.3.62": {
+      "Uno.WinUI.Runtime.Skia/6.4.106": {
         "type": "package",
         "dependencies": {
-          "Uno.WinUI": "6.3.62"
+          "Uno.WinUI": "6.4.106"
         },
         "compile": {
           "lib/net9.0/Uno.UI.Runtime.Skia.dll": {
@@ -1729,15 +1762,15 @@
           }
         }
       },
-      "Uno.WinUI.Runtime.Skia.Linux.FrameBuffer/6.3.62": {
+      "Uno.WinUI.Runtime.Skia.Linux.FrameBuffer/6.4.106": {
         "type": "package",
         "dependencies": {
           "HarfBuzzSharp": "8.3.1.1",
           "HarfBuzzSharp.NativeAssets.Linux": "8.3.1.1",
           "SkiaSharp": "3.119.0",
           "SkiaSharp.NativeAssets.Linux": "3.119.0",
-          "Uno.WinUI": "6.3.62",
-          "Uno.WinUI.Runtime.Skia": "6.3.62"
+          "Uno.WinUI": "6.4.106",
+          "Uno.WinUI.Runtime.Skia": "6.4.106"
         },
         "compile": {
           "lib/net9.0/Uno.UI.Runtime.Skia.Linux.FrameBuffer.dll": {
@@ -1754,15 +1787,16 @@
           "buildTransitive/Uno.WinUI.Runtime.Skia.Linux.FrameBuffer.targets": {}
         }
       },
-      "Uno.WinUI.Runtime.Skia.MacOS/6.3.62": {
+      "Uno.WinUI.Runtime.Skia.MacOS/6.4.106": {
         "type": "package",
         "dependencies": {
           "HarfBuzzSharp": "8.3.1.1",
           "HarfBuzzSharp.NativeAssets.macOS": "8.3.1.1",
           "SkiaSharp": "3.119.0",
           "SkiaSharp.NativeAssets.macos": "3.119.0",
-          "Uno.WinUI": "6.3.62",
-          "Uno.WinUI.Runtime.Skia": "6.3.62"
+          "Uno.WinUI": "6.4.106",
+          "Uno.WinUI.Runtime.Skia": "6.4.106",
+          "Uno.WinUI.Runtime.Skia.Linux.FrameBuffer": "6.4.106"
         },
         "compile": {
           "lib/net9.0/Uno.UI.Runtime.Skia.MacOS.dll": {
@@ -1785,13 +1819,13 @@
           }
         }
       },
-      "Uno.WinUI.Runtime.Skia.Win32/6.3.62": {
+      "Uno.WinUI.Runtime.Skia.Win32/6.4.106": {
         "type": "package",
         "dependencies": {
           "HarfBuzzSharp": "8.3.1.1",
           "Microsoft.Windows.CsWin32": "0.3.106",
-          "Uno.WinUI": "6.3.62",
-          "Uno.WinUI.Runtime.Skia": "6.3.62"
+          "Uno.WinUI": "6.4.106",
+          "Uno.WinUI.Runtime.Skia": "6.4.106"
         },
         "compile": {
           "lib/net9.0/Uno.UI.Runtime.Skia.Win32.Support.dll": {
@@ -1814,12 +1848,12 @@
           "buildTransitive/Uno.WinUI.Runtime.Skia.Win32.targets": {}
         }
       },
-      "Uno.WinUI.Runtime.Skia.Wpf/6.3.62": {
+      "Uno.WinUI.Runtime.Skia.Wpf/6.4.106": {
         "type": "package",
         "dependencies": {
           "HarfBuzzSharp": "8.3.1.1",
-          "Uno.WinUI": "6.3.62",
-          "Uno.WinUI.Runtime.Skia": "6.3.62"
+          "Uno.WinUI": "6.4.106",
+          "Uno.WinUI.Runtime.Skia": "6.4.106"
         },
         "compile": {
           "lib/net9.0/Uno.UI.Runtime.Skia.Wpf.dll": {
@@ -1839,7 +1873,7 @@
           "buildTransitive/Uno.WinUI.Runtime.Skia.Wpf.targets": {}
         }
       },
-      "Uno.WinUI.Runtime.Skia.X11/6.3.62": {
+      "Uno.WinUI.Runtime.Skia.X11/6.4.106": {
         "type": "package",
         "dependencies": {
           "HarfBuzzSharp.NativeAssets.Linux": "8.3.1.1",
@@ -1848,8 +1882,8 @@
           "SkiaSharp": "3.119.0",
           "SkiaSharp.NativeAssets.Linux": "3.119.0",
           "Tmds.DBus.Protocol": "0.21.2",
-          "Uno.WinUI": "6.3.62",
-          "Uno.WinUI.Runtime.Skia": "6.3.62"
+          "Uno.WinUI": "6.4.106",
+          "Uno.WinUI.Runtime.Skia": "6.4.106"
         },
         "compile": {
           "lib/net9.0/Uno.UI.Runtime.Skia.X11.dll": {
@@ -2102,10 +2136,10 @@
         "libvlcsharp.nuspec"
       ]
     },
-    "Microsoft.Extensions.Configuration/9.0.9": {
-      "sha512": "w87wF/90/VI0ZQBhf4rbMEeyEy0vi2WKjFmACsNAKNaorY+ZlVz7ddyXkbADvaWouMKffNmR0yQOGcrvSSvKGg==",
+    "Microsoft.Extensions.Configuration/9.0.11": {
+      "sha512": "4ceMQRCIMP9AxxZOQ0k+xYXCfgSEmEsnt6s0o/KkpeLqwm3kGKBbsiJlyMk56GnKJtk4SI7nTpIIzb+Qdk+FMQ==",
       "type": "package",
-      "path": "microsoft.extensions.configuration/9.0.9",
+      "path": "microsoft.extensions.configuration/9.0.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2125,15 +2159,15 @@
         "lib/net9.0/Microsoft.Extensions.Configuration.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.xml",
-        "microsoft.extensions.configuration.9.0.9.nupkg.sha512",
+        "microsoft.extensions.configuration.9.0.11.nupkg.sha512",
         "microsoft.extensions.configuration.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Configuration.Abstractions/9.0.9": {
-      "sha512": "p5RKAY9POvs3axwA/AQRuJeM8AHuE8h4qbP1NxQeGm0ep46aXz1oCLAp/oOYxX1GsjStgdhHrN3XXLLXr0+b3w==",
+    "Microsoft.Extensions.Configuration.Abstractions/9.0.11": {
+      "sha512": "g23//mPpMa33QdJkLujJICoCRbiLFpiQ4XbROG9JdeDI6/sM+qZPB2t5SmUWNM8GwY8dYW3NucxlZDFe8s3NAQ==",
       "type": "package",
-      "path": "microsoft.extensions.configuration.abstractions/9.0.9",
+      "path": "microsoft.extensions.configuration.abstractions/9.0.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2153,15 +2187,15 @@
         "lib/net9.0/Microsoft.Extensions.Configuration.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
-        "microsoft.extensions.configuration.abstractions.9.0.9.nupkg.sha512",
+        "microsoft.extensions.configuration.abstractions.9.0.11.nupkg.sha512",
         "microsoft.extensions.configuration.abstractions.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Configuration.Binder/9.0.9": {
-      "sha512": "6SIp/6Bngk4jm2W36JekZbiIbFPdE/eMUtrJEqIqHGpd1zar3jvgnwxnpWQfzUiGrkyY8q8s6V82zkkEZozghA==",
+    "Microsoft.Extensions.Configuration.Binder/9.0.11": {
+      "sha512": "iPE1jROL5uK/6iJSRzwpEIJt6BuANN36Io+6bLss67JVjbG6DdVedrMnB9nqsxs+Lx3X9RxvARTgFsUgP0MB0g==",
       "type": "package",
-      "path": "microsoft.extensions.configuration.binder/9.0.9",
+      "path": "microsoft.extensions.configuration.binder/9.0.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2192,7 +2226,7 @@
         "lib/net9.0/Microsoft.Extensions.Configuration.Binder.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.xml",
-        "microsoft.extensions.configuration.binder.9.0.9.nupkg.sha512",
+        "microsoft.extensions.configuration.binder.9.0.11.nupkg.sha512",
         "microsoft.extensions.configuration.binder.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -2353,10 +2387,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.DependencyInjection/9.0.9": {
-      "sha512": "zQV2WOSP+3z1EuK91ULxfGgo2Y75bTRnmJHp08+w/YXAyekZutX/qCd88/HOMNh35MDW9mJJJxPpMPS+1Rww8A==",
+    "Microsoft.Extensions.DependencyInjection/9.0.11": {
+      "sha512": "UquyDzvz0EneIQrrU67GJkIgynS+VD7t+RDtNv6VgKMOFrLBjldn6hzlXppGGecFMvAkMTqn4T8RYvzw7j7fQA==",
       "type": "package",
-      "path": "microsoft.extensions.dependencyinjection/9.0.9",
+      "path": "microsoft.extensions.dependencyinjection/9.0.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2378,15 +2412,15 @@
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.xml",
-        "microsoft.extensions.dependencyinjection.9.0.9.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.9.0.11.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.9": {
-      "sha512": "/hymojfWbE9AlDOa0mczR44m00Jj+T3+HZO0ZnVTI032fVycI0ZbNOVFP6kqZMcXiLSYXzR2ilcwaRi6dzeGyA==",
+    "Microsoft.Extensions.DependencyInjection.Abstractions/9.0.11": {
+      "sha512": "+ZxxZzcVU+IEzq12GItUzf/V3mEc5nSLiXijwvDc4zyhbjvSZZ043giSZqGnhakrjwRWjkerIHPrRwm9okEIpw==",
       "type": "package",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/9.0.9",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/9.0.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2408,7 +2442,7 @@
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
-        "microsoft.extensions.dependencyinjection.abstractions.9.0.9.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.9.0.11.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.abstractions.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -2623,10 +2657,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Logging/9.0.9": {
-      "sha512": "MaCB0Y9hNDs4YLu3HCJbo199WnJT8xSgajG1JYGANz9FkseQ5f3v/llu3HxLI6mjDlu7pa7ps9BLPWjKzsAAzQ==",
+    "Microsoft.Extensions.Logging/9.0.11": {
+      "sha512": "PVHYgMmMZFEE3PGpc7oZ9CnoyNonNyT5klrV9pNIzCPxL12FpQ7kNhliXAwowmtaDVBmKnG/1db6d7gqPwDj8g==",
       "type": "package",
-      "path": "microsoft.extensions.logging/9.0.9",
+      "path": "microsoft.extensions.logging/9.0.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2648,15 +2682,15 @@
         "lib/netstandard2.0/Microsoft.Extensions.Logging.xml",
         "lib/netstandard2.1/Microsoft.Extensions.Logging.dll",
         "lib/netstandard2.1/Microsoft.Extensions.Logging.xml",
-        "microsoft.extensions.logging.9.0.9.nupkg.sha512",
+        "microsoft.extensions.logging.9.0.11.nupkg.sha512",
         "microsoft.extensions.logging.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Logging.Abstractions/9.0.9": {
-      "sha512": "FEgpSF+Z9StMvrsSViaybOBwR0f0ZZxDm8xV5cSOFiXN/t+ys+rwAlTd/6yG7Ld1gfppgvLcMasZry3GsI9lGA==",
+    "Microsoft.Extensions.Logging.Abstractions/9.0.11": {
+      "sha512": "UKWFTDwtZQIoypyt1YPVsxTnDK+0sKn26+UeSGeNlkRQddrkt9EC6kP4g94rgO/WOZkz94bKNlF1dVZN3QfPFQ==",
       "type": "package",
-      "path": "microsoft.extensions.logging.abstractions/9.0.9",
+      "path": "microsoft.extensions.logging.abstractions/9.0.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2719,15 +2753,15 @@
         "lib/net9.0/Microsoft.Extensions.Logging.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
-        "microsoft.extensions.logging.abstractions.9.0.9.nupkg.sha512",
+        "microsoft.extensions.logging.abstractions.9.0.11.nupkg.sha512",
         "microsoft.extensions.logging.abstractions.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Logging.Configuration/9.0.9": {
-      "sha512": "Abuo+S0Sg+Ke6vzSh5Ell+lwJJM+CEIqg1ImtWnnqF6a/ibJkQnmFJi4/ekEw/0uAcdFKJXtGV7w6cFN0nyXeg==",
+    "Microsoft.Extensions.Logging.Configuration/9.0.11": {
+      "sha512": "NyBADqPcVpyJTD261c1/3Hr8sI+rOLFEJ9U5ts4KFlJy/cHMmF01X7LjsrieIRIxEjQz0NV5xSG4J2xN9/Ddeg==",
       "type": "package",
-      "path": "microsoft.extensions.logging.configuration/9.0.9",
+      "path": "microsoft.extensions.logging.configuration/9.0.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2746,15 +2780,15 @@
         "lib/net9.0/Microsoft.Extensions.Logging.Configuration.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Configuration.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Configuration.xml",
-        "microsoft.extensions.logging.configuration.9.0.9.nupkg.sha512",
+        "microsoft.extensions.logging.configuration.9.0.11.nupkg.sha512",
         "microsoft.extensions.logging.configuration.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Logging.Console/9.0.9": {
-      "sha512": "x3+W7IfW9Tg3sV+sU9N1039M4CqklaAecwhz9qNtjOCBdmg7h96JaL+NAvhYgZgweVJTJaxAvuO8I+ZZehE7Pg==",
+    "Microsoft.Extensions.Logging.Console/9.0.11": {
+      "sha512": "p99Uw/30KBdJKsYdO+mUrPnx3/qerGdq0hWUnEQUeOUKLGoAMrG+JK3zDub2T1G7H9m11nHFCjQ0TGPsUYMVYg==",
       "type": "package",
-      "path": "microsoft.extensions.logging.console/9.0.9",
+      "path": "microsoft.extensions.logging.console/9.0.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2774,7 +2808,7 @@
         "lib/net9.0/Microsoft.Extensions.Logging.Console.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Console.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Console.xml",
-        "microsoft.extensions.logging.console.9.0.9.nupkg.sha512",
+        "microsoft.extensions.logging.console.9.0.11.nupkg.sha512",
         "microsoft.extensions.logging.console.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -2867,10 +2901,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Options/9.0.9": {
-      "sha512": "loxGGHE1FC2AefwPHzrjPq7X92LQm64qnU/whKfo6oWaceewPUVYQJBJs3S3E2qlWwnCpeZ+dGCPTX+5dgVAuQ==",
+    "Microsoft.Extensions.Options/9.0.11": {
+      "sha512": "HX4M3BLkW1dtByMKHDVq6r7Jy6e4hf8NDzHpIgz7C8BtYk9JQHhfYX5c1UheQTD5Veg1yBhz/cD9C8vtrGrk9w==",
       "type": "package",
-      "path": "microsoft.extensions.options/9.0.9",
+      "path": "microsoft.extensions.options/9.0.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2907,15 +2941,15 @@
         "lib/netstandard2.0/Microsoft.Extensions.Options.xml",
         "lib/netstandard2.1/Microsoft.Extensions.Options.dll",
         "lib/netstandard2.1/Microsoft.Extensions.Options.xml",
-        "microsoft.extensions.options.9.0.9.nupkg.sha512",
+        "microsoft.extensions.options.9.0.11.nupkg.sha512",
         "microsoft.extensions.options.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Options.ConfigurationExtensions/9.0.9": {
-      "sha512": "n4DCdnn2qs6V5U06Sx62FySEAZsJiJJgOzrPHDh9hPK7c2W8hEabC76F3Re3tGPjpiKa02RvB6FxZyxo8iICzg==",
+    "Microsoft.Extensions.Options.ConfigurationExtensions/9.0.11": {
+      "sha512": "HUzr4c1eMXCQN8Yre2JdCzYmLJAecFGVXfByVhjEY4jBaHIs8EAxdv72WMUa2GcROlkYPbYNzMbcqJPMiznHxw==",
       "type": "package",
-      "path": "microsoft.extensions.options.configurationextensions/9.0.9",
+      "path": "microsoft.extensions.options.configurationextensions/9.0.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2935,15 +2969,15 @@
         "lib/net9.0/Microsoft.Extensions.Options.ConfigurationExtensions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Options.ConfigurationExtensions.xml",
-        "microsoft.extensions.options.configurationextensions.9.0.9.nupkg.sha512",
+        "microsoft.extensions.options.configurationextensions.9.0.11.nupkg.sha512",
         "microsoft.extensions.options.configurationextensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Primitives/9.0.9": {
-      "sha512": "z4pyMePOrl733ltTowbN565PxBw1oAr8IHmIXNDiDqd22nFpYltX9KhrNC/qBWAG1/Zx5MHX+cOYhWJQYCO/iw==",
+    "Microsoft.Extensions.Primitives/9.0.11": {
+      "sha512": "rtUNSIhbQTv8iSBTFvtg2b/ZUkoqC9qAH9DdC2hr+xPpoZrxiCITci9UR/ELUGUGnGUrF8Xye+tGVRhCxE+4LA==",
       "type": "package",
-      "path": "microsoft.extensions.primitives/9.0.9",
+      "path": "microsoft.extensions.primitives/9.0.11",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2963,7 +2997,7 @@
         "lib/net9.0/Microsoft.Extensions.Primitives.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
-        "microsoft.extensions.primitives.9.0.9.nupkg.sha512",
+        "microsoft.extensions.primitives.9.0.11.nupkg.sha512",
         "microsoft.extensions.primitives.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -4110,10 +4144,10 @@
         "uno.diagnostics.eventing.nuspec"
       ]
     },
-    "Uno.Extensions.Core/6.2.3": {
-      "sha512": "emgny31xV2fLU5iR/qVrqQ5/LQ8PfrPCrDQ5J1XzylmCVCp0U3RzzlR6sLezvFwCNEbFCxNixlLoDkAyUsRKHQ==",
+    "Uno.Extensions.Core/7.0.4": {
+      "sha512": "N09yFjtUcHNm9/Y60ppeI26G8pONC+s+I73mal13WfEwkCKfkrrRfnjoF3N4JR8GeikZZEYZmL1yiUTm6qbpEA==",
       "type": "package",
-      "path": "uno.extensions.core/6.2.3",
+      "path": "uno.extensions.core/7.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4123,15 +4157,15 @@
         "lib/net8.0/Uno.Extensions.Core.dll",
         "lib/net8.0/Uno.Extensions.Core.pdb",
         "lib/net8.0/Uno.Extensions.Core.xml",
-        "uno.extensions.core.6.2.3.nupkg.sha512",
+        "uno.extensions.core.7.0.4.nupkg.sha512",
         "uno.extensions.core.nuspec",
         "uno.png"
       ]
     },
-    "Uno.Extensions.Core.WinUI/6.2.3": {
-      "sha512": "9eevnMs5FCZYBiFITYNZCM1QVV4IfAcKbgZGdaMRB20e+gd9v+je8FLAd3dYB9M9bqBOrhXBaQrR8BLkin4QYg==",
+    "Uno.Extensions.Core.WinUI/7.0.4": {
+      "sha512": "Fn/OlB8W07WIikskHQ3IMMXko76B0yY/Tt4CY2JP9/8OT5rBDSsZdhCIbJ+pmPASLUmjmwuqWrBvliGaJmhdWg==",
       "type": "package",
-      "path": "uno.extensions.core.winui/6.2.3",
+      "path": "uno.extensions.core.winui/7.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4158,7 +4192,7 @@
         "lib/net8.0/Uno.Extensions.Core.UI.dll",
         "lib/net8.0/Uno.Extensions.Core.UI.pdb",
         "lib/net8.0/Uno.Extensions.Core.UI.xml",
-        "uno.extensions.core.winui.6.2.3.nupkg.sha512",
+        "uno.extensions.core.winui.7.0.4.nupkg.sha512",
         "uno.extensions.core.winui.nuspec",
         "uno.png"
       ]
@@ -4179,10 +4213,10 @@
         "uno.fonts.fluent.nuspec"
       ]
     },
-    "Uno.Fonts.OpenSans/2.7.1": {
-      "sha512": "sFZUzCtp7K95kw2BPeFvuNF3RgBgFGAmjkPFGkSwZJwcSk368PW76gCaVYrRBe4niQHOsQg84xmE+PtoYvpVog==",
+    "Uno.Fonts.OpenSans/2.8.1": {
+      "sha512": "cTxxScCHdbXY6ZhAbtXxsRVvJZdD9NuJAQua4DJ2u4JxvD48LuhGLHVMv28wPFIswn1EwxFPLE0VUZ3jqCNc0w==",
       "type": "package",
-      "path": "uno.fonts.opensans/2.7.1",
+      "path": "uno.fonts.opensans/2.8.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4228,7 +4262,7 @@
         "lib/net7.0/Uno.Fonts.OpenSans/Fonts/OpenSans_SemiCondensed-Regular.ttf",
         "lib/net7.0/Uno.Fonts.OpenSans/Fonts/OpenSans_SemiCondensed-SemiBold.ttf",
         "lib/net7.0/Uno.Fonts.OpenSans/Fonts/OpenSans_SemiCondensed-SemiBoldItalic.ttf",
-        "uno.fonts.opensans.2.7.1.nupkg.sha512",
+        "uno.fonts.opensans.2.8.1.nupkg.sha512",
         "uno.fonts.opensans.nuspec"
       ]
     },
@@ -4259,10 +4293,10 @@
         "uno.fonts.roboto.nuspec"
       ]
     },
-    "Uno.Foundation/6.3.62": {
-      "sha512": "yLv0SsLhr0TGokCv3zy3CdsjTzACjoRR2DWEKWgvJ32h+CEE2IH/o9kFFEsoMHesx0L2bqu0hNyW9M9WQphIKw==",
+    "Uno.Foundation/6.4.106": {
+      "sha512": "oUXUPbShWRvid7Esdr8WvoxpLZ6TrEa2oKYvlE+auaN1Zk40uexEQ4LAWgFcYSYWm8BSQM6nYpe1WIIuAaQz2g==",
       "type": "package",
-      "path": "uno.foundation/6.3.62",
+      "path": "uno.foundation/6.4.106",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -4270,12 +4304,12 @@
         "buildTransitive/Uno.Foundation.props",
         "lib/net10.0-android36.0/Uno.Foundation.dll",
         "lib/net10.0-android36.0/Uno.Foundation.pdb",
-        "lib/net10.0-ios18.5/Uno.Foundation.dll",
-        "lib/net10.0-ios18.5/Uno.Foundation.pdb",
-        "lib/net10.0-maccatalyst18.5/Uno.Foundation.dll",
-        "lib/net10.0-maccatalyst18.5/Uno.Foundation.pdb",
-        "lib/net10.0-tvos18.5/Uno.Foundation.dll",
-        "lib/net10.0-tvos18.5/Uno.Foundation.pdb",
+        "lib/net10.0-ios26.0/Uno.Foundation.dll",
+        "lib/net10.0-ios26.0/Uno.Foundation.pdb",
+        "lib/net10.0-maccatalyst26.0/Uno.Foundation.dll",
+        "lib/net10.0-maccatalyst26.0/Uno.Foundation.pdb",
+        "lib/net10.0-tvos26.0/Uno.Foundation.dll",
+        "lib/net10.0-tvos26.0/Uno.Foundation.pdb",
         "lib/net10.0/Uno.Foundation.dll",
         "lib/net9.0-android30.0/Uno.Foundation.dll",
         "lib/net9.0-android30.0/Uno.Foundation.pdb",
@@ -4295,29 +4329,29 @@
         "uno-runtime/net9.0/skia/Uno.Foundation.pdb",
         "uno-runtime/net9.0/webassembly/Uno.Foundation.dll",
         "uno-runtime/net9.0/webassembly/Uno.Foundation.pdb",
-        "uno.foundation.6.3.62.nupkg.sha512",
+        "uno.foundation.6.4.106.nupkg.sha512",
         "uno.foundation.nuspec",
         "uno.png"
       ]
     },
-    "Uno.Foundation.Logging/6.3.62": {
-      "sha512": "GD13ClKF/4Bpod+OiALvxo8s/SW4jGEQenm99gWlTSw17JKMMoPQ1LxQOzHZakAQJA41AeMuMoAZvu9n+McUcQ==",
+    "Uno.Foundation.Logging/6.4.106": {
+      "sha512": "BndXR4yZO/FrdwaHhOjVh3QTFvcnLoCkBDGZXot/Lq25akbZg58C85o5L9HZbn8SyUqkPL/EmL/wf7Knon73Qw==",
       "type": "package",
-      "path": "uno.foundation.logging/6.3.62",
+      "path": "uno.foundation.logging/6.4.106",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/net9.0/Uno.Foundation.Logging.dll",
         "lib/net9.0/Uno.Foundation.Logging.pdb",
-        "uno.foundation.logging.6.3.62.nupkg.sha512",
+        "uno.foundation.logging.6.4.106.nupkg.sha512",
         "uno.foundation.logging.nuspec",
         "uno.png"
       ]
     },
-    "Uno.Resizetizer/1.11.1": {
-      "sha512": "2gdDv4aiYdo4RT6Ad2f8iOJxX1MzD87gClMKxvVNv1AviTI50qmYptyb56dQQtk4351t8R2v+5tqRMcHH4rM9Q==",
+    "Uno.Resizetizer/1.12.1": {
+      "sha512": "sExaS7Gd6iW3X+ihxghdd6BbluyWky9Fj7CsQZfGBnIBbt5p+pa6ybgwrCxlKMwazCy5/+pg78FzA6RsPzxRYw==",
       "type": "package",
-      "path": "uno.resizetizer/1.11.1",
+      "path": "uno.resizetizer/1.12.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4355,9 +4389,7 @@
         "build/netstandard2.0/System.Text.Json.dll",
         "build/netstandard2.0/System.Threading.Tasks.Extensions.dll",
         "build/netstandard2.0/System.Threading.dll",
-        "build/netstandard2.0/Uno.Resizetizer_a99e1757bf3c20a7a2b65845f7f3526423fce1d2.dll",
-        "build/netstandard2.0/libHarfBuzzSharp.so",
-        "build/netstandard2.0/libSkiaSharp.so",
+        "build/netstandard2.0/Uno.Resizetizer_f64905ae69aaa2e476e986c0810d03fae47ed6a9.dll",
         "build/netstandard2.0/runtimes/linux-arm/native/libHarfBuzzSharp.so",
         "build/netstandard2.0/runtimes/linux-arm/native/libSkiaSharp.so",
         "build/netstandard2.0/runtimes/linux-arm64/native/libHarfBuzzSharp.so",
@@ -4375,7 +4407,7 @@
         "build/netstandard2.0/runtimes/win-x86/native/libHarfBuzzSharp.dll",
         "build/netstandard2.0/runtimes/win-x86/native/libSkiaSharp.dll",
         "uno.png",
-        "uno.resizetizer.1.11.1.nupkg.sha512",
+        "uno.resizetizer.1.12.1.nupkg.sha512",
         "uno.resizetizer.nuspec"
       ]
     },
@@ -4401,15 +4433,18 @@
         "uno.sdk.extras.nuspec"
       ]
     },
-    "Uno.Settings.DevServer/1.6.3": {
-      "sha512": "KwtUEvgsgNwwGRRtKHmsQ6Bzbp0UKDHVqoecPjtEg4ead4m6bVZTvoMwazjGYSAN/EIrIneMfxHMJMdLbIpApg==",
+    "Uno.Settings.DevServer/1.7.1": {
+      "sha512": "thb5DrYRrwirmIb8hlaeotyNIyjSFHf+zZmn84AUyfZJftLF0RCfS0Zl//Nad1/yb8qIfA0MCrVqN9OaN5rZ2w==",
       "type": "package",
-      "path": "uno.settings.devserver/1.6.3",
+      "path": "uno.settings.devserver/1.7.1",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "buildTransitive/Uno.Settings.DevServer.targets",
+        "tools/devserver/CacheCow.Client.FileStore.dll",
+        "tools/devserver/CacheCow.Client.dll",
+        "tools/devserver/CacheCow.Common.dll",
         "tools/devserver/Config/auth.json",
         "tools/devserver/Config/sdk.json",
         "tools/devserver/IdentityModel.OidcClient.dll",
@@ -4417,21 +4452,39 @@
         "tools/devserver/Microsoft.ApplicationInsights.dll",
         "tools/devserver/Microsoft.Bcl.TimeProvider.dll",
         "tools/devserver/Microsoft.DotNet.PlatformAbstractions.dll",
+        "tools/devserver/Microsoft.Extensions.AmbientMetadata.Application.dll",
+        "tools/devserver/Microsoft.Extensions.Caching.Abstractions.dll",
+        "tools/devserver/Microsoft.Extensions.Caching.Memory.dll",
+        "tools/devserver/Microsoft.Extensions.Compliance.Abstractions.dll",
         "tools/devserver/Microsoft.Extensions.Configuration.Abstractions.dll",
         "tools/devserver/Microsoft.Extensions.Configuration.Binder.dll",
         "tools/devserver/Microsoft.Extensions.Configuration.FileExtensions.dll",
         "tools/devserver/Microsoft.Extensions.Configuration.Json.dll",
         "tools/devserver/Microsoft.Extensions.Configuration.dll",
         "tools/devserver/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "tools/devserver/Microsoft.Extensions.DependencyInjection.AutoActivation.dll",
+        "tools/devserver/Microsoft.Extensions.DependencyInjection.dll",
         "tools/devserver/Microsoft.Extensions.Diagnostics.Abstractions.dll",
+        "tools/devserver/Microsoft.Extensions.Diagnostics.ExceptionSummarization.dll",
+        "tools/devserver/Microsoft.Extensions.Diagnostics.dll",
         "tools/devserver/Microsoft.Extensions.FileProviders.Abstractions.dll",
         "tools/devserver/Microsoft.Extensions.FileProviders.Physical.dll",
         "tools/devserver/Microsoft.Extensions.FileSystemGlobbing.dll",
         "tools/devserver/Microsoft.Extensions.Hosting.Abstractions.dll",
+        "tools/devserver/Microsoft.Extensions.Http.Diagnostics.dll",
+        "tools/devserver/Microsoft.Extensions.Http.Resilience.dll",
+        "tools/devserver/Microsoft.Extensions.Http.dll",
         "tools/devserver/Microsoft.Extensions.Logging.Abstractions.dll",
+        "tools/devserver/Microsoft.Extensions.Logging.Configuration.dll",
+        "tools/devserver/Microsoft.Extensions.Logging.dll",
+        "tools/devserver/Microsoft.Extensions.ObjectPool.dll",
         "tools/devserver/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
         "tools/devserver/Microsoft.Extensions.Options.dll",
         "tools/devserver/Microsoft.Extensions.Primitives.dll",
+        "tools/devserver/Microsoft.Extensions.Resilience.dll",
+        "tools/devserver/Microsoft.Extensions.Telemetry.Abstractions.dll",
+        "tools/devserver/Microsoft.Extensions.Telemetry.dll",
+        "tools/devserver/Microsoft.IO.RecyclableMemoryStream.dll",
         "tools/devserver/Microsoft.IdentityModel.Abstractions.dll",
         "tools/devserver/Microsoft.IdentityModel.JsonWebTokens.dll",
         "tools/devserver/Microsoft.IdentityModel.Logging.dll",
@@ -4442,8 +4495,14 @@
         "tools/devserver/Microsoft.Kiota.Serialization.Json.dll",
         "tools/devserver/Microsoft.Kiota.Serialization.Multipart.dll",
         "tools/devserver/Microsoft.Kiota.Serialization.Text.dll",
+        "tools/devserver/Newtonsoft.Json.Bson.dll",
         "tools/devserver/Newtonsoft.Json.dll",
+        "tools/devserver/Polly.Core.dll",
+        "tools/devserver/Polly.Extensions.dll",
+        "tools/devserver/Polly.RateLimiting.dll",
         "tools/devserver/Std.UriTemplate.dll",
+        "tools/devserver/System.Net.Http.Formatting.dll",
+        "tools/devserver/System.Threading.RateLimiting.dll",
         "tools/devserver/Uno.DevTools.Telemetry.dll",
         "tools/devserver/Uno.Licensing.Common.dll",
         "tools/devserver/Uno.Licensing.Common.pdb",
@@ -4528,6 +4587,9 @@
         "tools/manager/Assets/SharedAssets.md",
         "tools/manager/Assets/Svg/critical.svg",
         "tools/manager/Assets/Svg/error.svg",
+        "tools/manager/CacheCow.Client.FileStore.dll",
+        "tools/manager/CacheCow.Client.dll",
+        "tools/manager/CacheCow.Common.dll",
         "tools/manager/CommonServiceLocator.dll",
         "tools/manager/CommunityToolkit.Mvvm.dll",
         "tools/manager/Config/auth.json",
@@ -4538,26 +4600,78 @@
         "tools/manager/IdentityModel.dll",
         "tools/manager/LibVLCSharp.dll",
         "tools/manager/Microsoft.ApplicationInsights.dll",
+        "tools/manager/Microsoft.AspNetCore.Authentication.Abstractions.dll",
+        "tools/manager/Microsoft.AspNetCore.Authentication.Core.dll",
+        "tools/manager/Microsoft.AspNetCore.Connections.Abstractions.dll",
+        "tools/manager/Microsoft.AspNetCore.Diagnostics.Abstractions.dll",
+        "tools/manager/Microsoft.AspNetCore.Diagnostics.dll",
+        "tools/manager/Microsoft.AspNetCore.HostFiltering.dll",
+        "tools/manager/Microsoft.AspNetCore.Hosting.Abstractions.dll",
+        "tools/manager/Microsoft.AspNetCore.Hosting.Server.Abstractions.dll",
+        "tools/manager/Microsoft.AspNetCore.Hosting.dll",
+        "tools/manager/Microsoft.AspNetCore.Http.Abstractions.dll",
+        "tools/manager/Microsoft.AspNetCore.Http.Extensions.dll",
+        "tools/manager/Microsoft.AspNetCore.Http.Features.dll",
+        "tools/manager/Microsoft.AspNetCore.Http.dll",
+        "tools/manager/Microsoft.AspNetCore.HttpOverrides.dll",
+        "tools/manager/Microsoft.AspNetCore.Routing.Abstractions.dll",
+        "tools/manager/Microsoft.AspNetCore.Routing.dll",
+        "tools/manager/Microsoft.AspNetCore.Server.IIS.dll",
+        "tools/manager/Microsoft.AspNetCore.Server.IISIntegration.dll",
+        "tools/manager/Microsoft.AspNetCore.Server.Kestrel.Core.dll",
         "tools/manager/Microsoft.AspNetCore.Server.Kestrel.Https.dll",
         "tools/manager/Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll",
+        "tools/manager/Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.dll",
+        "tools/manager/Microsoft.AspNetCore.Server.Kestrel.dll",
+        "tools/manager/Microsoft.AspNetCore.WebUtilities.dll",
+        "tools/manager/Microsoft.AspNetCore.dll",
         "tools/manager/Microsoft.Bcl.AsyncInterfaces.dll",
         "tools/manager/Microsoft.Bcl.TimeProvider.dll",
         "tools/manager/Microsoft.CodeAnalysis.dll",
         "tools/manager/Microsoft.DotNet.PlatformAbstractions.dll",
+        "tools/manager/Microsoft.Extensions.AmbientMetadata.Application.dll",
+        "tools/manager/Microsoft.Extensions.Caching.Abstractions.dll",
+        "tools/manager/Microsoft.Extensions.Caching.Memory.dll",
+        "tools/manager/Microsoft.Extensions.Compliance.Abstractions.dll",
+        "tools/manager/Microsoft.Extensions.Configuration.Abstractions.dll",
         "tools/manager/Microsoft.Extensions.Configuration.Binder.dll",
+        "tools/manager/Microsoft.Extensions.Configuration.CommandLine.dll",
+        "tools/manager/Microsoft.Extensions.Configuration.EnvironmentVariables.dll",
         "tools/manager/Microsoft.Extensions.Configuration.FileExtensions.dll",
         "tools/manager/Microsoft.Extensions.Configuration.Json.dll",
+        "tools/manager/Microsoft.Extensions.Configuration.UserSecrets.dll",
+        "tools/manager/Microsoft.Extensions.Configuration.dll",
         "tools/manager/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "tools/manager/Microsoft.Extensions.DependencyInjection.AutoActivation.dll",
         "tools/manager/Microsoft.Extensions.DependencyInjection.dll",
         "tools/manager/Microsoft.Extensions.DependencyModel.dll",
         "tools/manager/Microsoft.Extensions.Diagnostics.Abstractions.dll",
+        "tools/manager/Microsoft.Extensions.Diagnostics.ExceptionSummarization.dll",
+        "tools/manager/Microsoft.Extensions.Diagnostics.dll",
+        "tools/manager/Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "tools/manager/Microsoft.Extensions.FileProviders.Physical.dll",
+        "tools/manager/Microsoft.Extensions.FileSystemGlobbing.dll",
         "tools/manager/Microsoft.Extensions.Hosting.Abstractions.dll",
+        "tools/manager/Microsoft.Extensions.Hosting.dll",
+        "tools/manager/Microsoft.Extensions.Http.Diagnostics.dll",
+        "tools/manager/Microsoft.Extensions.Http.Resilience.dll",
+        "tools/manager/Microsoft.Extensions.Http.dll",
         "tools/manager/Microsoft.Extensions.Localization.Abstractions.dll",
         "tools/manager/Microsoft.Extensions.Logging.Abstractions.dll",
         "tools/manager/Microsoft.Extensions.Logging.Configuration.dll",
         "tools/manager/Microsoft.Extensions.Logging.Console.dll",
+        "tools/manager/Microsoft.Extensions.Logging.Debug.dll",
+        "tools/manager/Microsoft.Extensions.Logging.EventLog.dll",
+        "tools/manager/Microsoft.Extensions.Logging.EventSource.dll",
         "tools/manager/Microsoft.Extensions.Logging.dll",
+        "tools/manager/Microsoft.Extensions.ObjectPool.dll",
+        "tools/manager/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
         "tools/manager/Microsoft.Extensions.Options.dll",
+        "tools/manager/Microsoft.Extensions.Primitives.dll",
+        "tools/manager/Microsoft.Extensions.Resilience.dll",
+        "tools/manager/Microsoft.Extensions.Telemetry.Abstractions.dll",
+        "tools/manager/Microsoft.Extensions.Telemetry.dll",
+        "tools/manager/Microsoft.IO.RecyclableMemoryStream.dll",
         "tools/manager/Microsoft.IdentityModel.Abstractions.dll",
         "tools/manager/Microsoft.IdentityModel.JsonWebTokens.dll",
         "tools/manager/Microsoft.IdentityModel.Logging.dll",
@@ -4568,7 +4682,12 @@
         "tools/manager/Microsoft.Kiota.Serialization.Json.dll",
         "tools/manager/Microsoft.Kiota.Serialization.Multipart.dll",
         "tools/manager/Microsoft.Kiota.Serialization.Text.dll",
-        "tools/manager/Microsoft.Win32.SystemEvents.dll",
+        "tools/manager/Microsoft.Net.Http.Headers.dll",
+        "tools/manager/Newtonsoft.Json.Bson.dll",
+        "tools/manager/Newtonsoft.Json.dll",
+        "tools/manager/Polly.Core.dll",
+        "tools/manager/Polly.Extensions.dll",
+        "tools/manager/Polly.RateLimiting.dll",
         "tools/manager/Refit.dll",
         "tools/manager/Serilog.Extensions.Hosting.dll",
         "tools/manager/Serilog.Extensions.Logging.dll",
@@ -4578,7 +4697,6 @@
         "tools/manager/Serilog.Sinks.File.dll",
         "tools/manager/Serilog.dll",
         "tools/manager/ShimSkiaSharp.dll",
-        "tools/manager/SkiaSharp.HarfBuzz.dll",
         "tools/manager/SkiaSharp.Resources.dll",
         "tools/manager/SkiaSharp.SceneGraph.dll",
         "tools/manager/SkiaSharp.Skottie.dll",
@@ -4589,9 +4707,12 @@
         "tools/manager/Svg.Custom.dll",
         "tools/manager/Svg.Model.dll",
         "tools/manager/Svg.Skia.dll",
+        "tools/manager/System.Diagnostics.EventLog.dll",
         "tools/manager/System.Json.dll",
         "tools/manager/System.Linq.Async.dll",
+        "tools/manager/System.Net.Http.Formatting.dll",
         "tools/manager/System.Runtime.InteropServices.WindowsRuntime.dll",
+        "tools/manager/System.Threading.RateLimiting.dll",
         "tools/manager/Tmds.DBus.Protocol.dll",
         "tools/manager/Uno.Core.Extensions.Collections.dll",
         "tools/manager/Uno.Core.Extensions.Disposables.dll",
@@ -4729,24 +4850,8 @@
         "tools/manager/runtimes/linux-arm/native/libSkiaSharp.so",
         "tools/manager/runtimes/linux-arm64/native/libHarfBuzzSharp.so",
         "tools/manager/runtimes/linux-arm64/native/libSkiaSharp.so",
-        "tools/manager/runtimes/linux-loongarch64/native/libHarfBuzzSharp.so",
-        "tools/manager/runtimes/linux-loongarch64/native/libSkiaSharp.so",
-        "tools/manager/runtimes/linux-musl-arm/native/libHarfBuzzSharp.so",
-        "tools/manager/runtimes/linux-musl-arm/native/libSkiaSharp.so",
-        "tools/manager/runtimes/linux-musl-arm64/native/libHarfBuzzSharp.so",
-        "tools/manager/runtimes/linux-musl-arm64/native/libSkiaSharp.so",
-        "tools/manager/runtimes/linux-musl-loongarch64/native/libHarfBuzzSharp.so",
-        "tools/manager/runtimes/linux-musl-loongarch64/native/libSkiaSharp.so",
-        "tools/manager/runtimes/linux-musl-riscv64/native/libHarfBuzzSharp.so",
-        "tools/manager/runtimes/linux-musl-riscv64/native/libSkiaSharp.so",
-        "tools/manager/runtimes/linux-musl-x64/native/libHarfBuzzSharp.so",
-        "tools/manager/runtimes/linux-musl-x64/native/libSkiaSharp.so",
-        "tools/manager/runtimes/linux-riscv64/native/libHarfBuzzSharp.so",
-        "tools/manager/runtimes/linux-riscv64/native/libSkiaSharp.so",
         "tools/manager/runtimes/linux-x64/native/libHarfBuzzSharp.so",
         "tools/manager/runtimes/linux-x64/native/libSkiaSharp.so",
-        "tools/manager/runtimes/linux-x86/native/libHarfBuzzSharp.so",
-        "tools/manager/runtimes/linux-x86/native/libSkiaSharp.so",
         "tools/manager/runtimes/osx/native/libHarfBuzzSharp.dylib",
         "tools/manager/runtimes/osx/native/libSkiaSharp.dylib",
         "tools/manager/runtimes/osx/native/libUnoNativeMac.dylib",
@@ -4754,9 +4859,10 @@
         "tools/manager/runtimes/win-arm64/native/libSkiaSharp.dll",
         "tools/manager/runtimes/win-x64/native/libHarfBuzzSharp.dll",
         "tools/manager/runtimes/win-x64/native/libSkiaSharp.dll",
-        "tools/manager/runtimes/win-x86/native/libHarfBuzzSharp.dll",
-        "tools/manager/runtimes/win-x86/native/libSkiaSharp.dll",
-        "tools/manager/runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll",
+        "tools/manager/runtimes/win-x64/nativeassets/netcoreapp2.2/aspnetcorev2_inprocess.dll",
+        "tools/manager/runtimes/win-x86/nativeassets/netcoreapp2.2/aspnetcorev2_inprocess.dll",
+        "tools/manager/runtimes/win/lib/net8.0/System.Diagnostics.EventLog.Messages.dll",
+        "tools/manager/runtimes/win/lib/net8.0/System.Diagnostics.EventLog.dll",
         "tools/manager/splash_screen.png",
         "tools/manager/splash_screen.scale-100.png",
         "tools/manager/splash_screen.scale-125.png",
@@ -4768,86 +4874,86 @@
         "tools/manager/zh-Hans/Microsoft.CodeAnalysis.resources.dll",
         "tools/manager/zh-Hant/Microsoft.CodeAnalysis.resources.dll",
         "uno.png",
-        "uno.settings.devserver.1.6.3.nupkg.sha512",
+        "uno.settings.devserver.1.7.1.nupkg.sha512",
         "uno.settings.devserver.nuspec"
       ]
     },
-    "Uno.Themes.WinUI/5.7.3": {
-      "sha512": "2u01qDh99T6OnRN8epxckGfLBMg7YHp6fXPezGVnejmwrub1HwBgfY69B1+mWcHBWXFkFiAWYze+InguNAuoVA==",
+    "Uno.Themes.WinUI/6.0.2": {
+      "sha512": "UcCqHutm8G+qJkXomxCylCtOTyxn8k6tTnaUk9Sp8yAwrZnWCVfY47LxQOB50mfAhrTxBKdhFPvOz8t9h9FtIA==",
       "type": "package",
-      "path": "uno.themes.winui/5.7.3",
+      "path": "uno.themes.winui/6.0.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
         "buildTransitive/Uno.Themes.WinUI.targets",
-        "lib/net8.0-android34.0/Uno.Themes.WinUI.aar",
-        "lib/net8.0-android34.0/Uno.Themes.WinUI.dll",
-        "lib/net8.0-android34.0/Uno.Themes.WinUI.pdb",
-        "lib/net8.0-android34.0/Uno.Themes.WinUI.xml",
-        "lib/net8.0-ios18.0/Uno.Themes.WinUI.dll",
-        "lib/net8.0-ios18.0/Uno.Themes.WinUI.pdb",
-        "lib/net8.0-maccatalyst18.0/Uno.Themes.WinUI.dll",
-        "lib/net8.0-maccatalyst18.0/Uno.Themes.WinUI.pdb",
-        "lib/net8.0-macos15.0/Uno.Themes.WinUI.dll",
-        "lib/net8.0-macos15.0/Uno.Themes.WinUI.pdb",
-        "lib/net8.0-windows10.0.19041/Uno.Themes.WinUI.dll",
-        "lib/net8.0-windows10.0.19041/Uno.Themes.WinUI.pdb",
-        "lib/net8.0-windows10.0.19041/Uno.Themes.WinUI.pri",
-        "lib/net8.0/Uno.Themes.WinUI.dll",
-        "lib/net8.0/Uno.Themes.WinUI.pdb",
+        "lib/net9.0-android35.0/Uno.Themes.WinUI.aar",
+        "lib/net9.0-android35.0/Uno.Themes.WinUI.dll",
+        "lib/net9.0-android35.0/Uno.Themes.WinUI.pdb",
+        "lib/net9.0-android35.0/Uno.Themes.WinUI.xml",
+        "lib/net9.0-ios18.0/Uno.Themes.WinUI.dll",
+        "lib/net9.0-ios18.0/Uno.Themes.WinUI.pdb",
+        "lib/net9.0-maccatalyst18.0/Uno.Themes.WinUI.dll",
+        "lib/net9.0-maccatalyst18.0/Uno.Themes.WinUI.pdb",
+        "lib/net9.0-macos15.0/Uno.Themes.WinUI.dll",
+        "lib/net9.0-macos15.0/Uno.Themes.WinUI.pdb",
+        "lib/net9.0-windows10.0.19041/Uno.Themes.WinUI.dll",
+        "lib/net9.0-windows10.0.19041/Uno.Themes.WinUI.pdb",
+        "lib/net9.0-windows10.0.19041/Uno.Themes.WinUI.pri",
+        "lib/net9.0/Uno.Themes.WinUI.dll",
+        "lib/net9.0/Uno.Themes.WinUI.pdb",
         "uno-logo.png",
         "uno.png",
-        "uno.themes.winui.5.7.3.nupkg.sha512",
+        "uno.themes.winui.6.0.2.nupkg.sha512",
         "uno.themes.winui.nuspec"
       ]
     },
-    "Uno.Toolkit/8.2.4": {
-      "sha512": "nyxCw6o++t+v/8Phl6xtHXrKUdFsNykT3kqamaYXAAgN4OMADJrGJZMfeMLtFs8QLvRrS6ExxwCdiW7/laGw/w==",
+    "Uno.Toolkit/8.3.2": {
+      "sha512": "Fg3xiIHgYWVbAPhIMpDgIdPWait9OEu2N1rT5PyupXhBFSxzFNDCf+nGewdiadgwZpJ9W5zhT6X6Nph0pATvCg==",
       "type": "package",
-      "path": "uno.toolkit/8.2.4",
+      "path": "uno.toolkit/8.3.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Uno.Toolkit.dll",
         "lib/netstandard2.0/Uno.Toolkit.pdb",
         "uno.png",
-        "uno.toolkit.8.2.4.nupkg.sha512",
+        "uno.toolkit.8.3.2.nupkg.sha512",
         "uno.toolkit.nuspec"
       ]
     },
-    "Uno.Toolkit.WinUI/8.2.4": {
-      "sha512": "0KhzUNJkRr2xoHNAsArJ+DDg1w/idKgro/gquYRo4vKQFs6GZMi5w0U1nkroTM4SNYrJB4WlTx+fr3U/WCy4Sg==",
+    "Uno.Toolkit.WinUI/8.3.2": {
+      "sha512": "uK6IsTuHnKCxB5Qcct+wYTPEc5GX9QhxXhVlpGbC0PpN4vtdTtPAQXlm3B2L4Pdf+XbbiCzvr3tAZwllrEi/JA==",
       "type": "package",
-      "path": "uno.toolkit.winui/8.2.4",
+      "path": "uno.toolkit.winui/8.3.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "buildTransitive/Uno.Toolkit.WinUI.targets",
-        "lib/net8.0-android34.0/Uno.Toolkit.WinUI.aar",
-        "lib/net8.0-android34.0/Uno.Toolkit.WinUI.dll",
-        "lib/net8.0-android34.0/Uno.Toolkit.WinUI.pdb",
-        "lib/net8.0-android34.0/Uno.Toolkit.WinUI.xml",
-        "lib/net8.0-ios18.0/Uno.Toolkit.WinUI.dll",
-        "lib/net8.0-ios18.0/Uno.Toolkit.WinUI.pdb",
-        "lib/net8.0-maccatalyst18.0/Uno.Toolkit.WinUI.dll",
-        "lib/net8.0-maccatalyst18.0/Uno.Toolkit.WinUI.pdb",
-        "lib/net8.0-macos15.0/Uno.Toolkit.WinUI.dll",
-        "lib/net8.0-macos15.0/Uno.Toolkit.WinUI.pdb",
-        "lib/net8.0-windows10.0.19041/Uno.Toolkit.WinUI.dll",
-        "lib/net8.0-windows10.0.19041/Uno.Toolkit.WinUI.pdb",
-        "lib/net8.0-windows10.0.19041/Uno.Toolkit.WinUI.pri",
-        "lib/net8.0/Uno.Toolkit.WinUI.dll",
-        "lib/net8.0/Uno.Toolkit.WinUI.pdb",
+        "lib/net9.0-android35.0/Uno.Toolkit.WinUI.aar",
+        "lib/net9.0-android35.0/Uno.Toolkit.WinUI.dll",
+        "lib/net9.0-android35.0/Uno.Toolkit.WinUI.pdb",
+        "lib/net9.0-android35.0/Uno.Toolkit.WinUI.xml",
+        "lib/net9.0-ios18.0/Uno.Toolkit.WinUI.dll",
+        "lib/net9.0-ios18.0/Uno.Toolkit.WinUI.pdb",
+        "lib/net9.0-maccatalyst18.0/Uno.Toolkit.WinUI.dll",
+        "lib/net9.0-maccatalyst18.0/Uno.Toolkit.WinUI.pdb",
+        "lib/net9.0-macos15.0/Uno.Toolkit.WinUI.dll",
+        "lib/net9.0-macos15.0/Uno.Toolkit.WinUI.pdb",
+        "lib/net9.0-windows10.0.19041/Uno.Toolkit.WinUI.dll",
+        "lib/net9.0-windows10.0.19041/Uno.Toolkit.WinUI.pdb",
+        "lib/net9.0-windows10.0.19041/Uno.Toolkit.WinUI.pri",
+        "lib/net9.0/Uno.Toolkit.WinUI.dll",
+        "lib/net9.0/Uno.Toolkit.WinUI.pdb",
         "uno.png",
-        "uno.toolkit.winui.8.2.4.nupkg.sha512",
+        "uno.toolkit.winui.8.3.2.nupkg.sha512",
         "uno.toolkit.winui.nuspec"
       ]
     },
-    "Uno.UI.Adapter.Microsoft.Extensions.Logging/6.3.62": {
-      "sha512": "QmaGl3Y2Pk+t47w6cW6zm+mAM8uL49+SUIt4kJSvR7fwWEbuWcBRUwPRaQZ0LJQ3AFzyXNXHYmNbnvNEp/RI/Q==",
+    "Uno.UI.Adapter.Microsoft.Extensions.Logging/6.4.106": {
+      "sha512": "x+zfjulbW+OCOfCEENgutHjDuCYQJ8KAkNucImW1uHUZ9+uw2p8W9hEZct4LNFlAQqM7wXh3TebROnjaVgg1jg==",
       "type": "package",
-      "path": "uno.ui.adapter.microsoft.extensions.logging/6.3.62",
+      "path": "uno.ui.adapter.microsoft.extensions.logging/6.4.106",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4856,22 +4962,51 @@
         "lib/net9.0/Uno.UI.Adapter.Microsoft.Extensions.Logging.dll",
         "lib/net9.0/Uno.UI.Adapter.Microsoft.Extensions.Logging.pdb",
         "uno.png",
-        "uno.ui.adapter.microsoft.extensions.logging.6.3.62.nupkg.sha512",
+        "uno.ui.adapter.microsoft.extensions.logging.6.4.106.nupkg.sha512",
         "uno.ui.adapter.microsoft.extensions.logging.nuspec"
       ]
     },
-    "Uno.UI.HotDesign/1.16.109": {
-      "sha512": "hN45iKOS5cJzLW6E/5NHGnlEza/wVOx87IExotiqaSr6kQUY68L8ZHMjBMb3DXhDViUyDbGy4DxHcTsMPghg1w==",
+    "Uno.UI.App.Mcp/1.0.7": {
+      "sha512": "n6eecdmDGpBqee/Rnus4cG8y1lzkofnbOFNehV41kgIqYRG3hq2NNl4K4VeS/xYnn6gUEtyPySuAIQMreuuSjA==",
       "type": "package",
-      "path": "uno.ui.hotdesign/1.16.109",
+      "path": "uno.ui.app.mcp/1.0.7",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "buildTransitive/Uno.UI.App.Mcp.targets",
+        "lib/net9.0/Uno.UI.App.Mcp.Client.deps.json",
+        "lib/net9.0/Uno.UI.App.Mcp.Client.dll",
+        "lib/net9.0/Uno.UI.App.Mcp.Client.pdb",
+        "lib/net9.0/Uno.UI.App.Mcp.Messages.dll",
+        "lib/net9.0/Uno.UI.App.Mcp.Messages.pdb",
+        "tools/devserver/Uno.UI.App.Mcp.Messages.dll",
+        "tools/devserver/Uno.UI.App.Mcp.Messages.pdb",
+        "tools/devserver/Uno.UI.App.Mcp.Server.deps.json",
+        "tools/devserver/Uno.UI.App.Mcp.Server.dll",
+        "tools/devserver/Uno.UI.App.Mcp.Server.pdb",
+        "uno.png",
+        "uno.ui.app.mcp.1.0.7.nupkg.sha512",
+        "uno.ui.app.mcp.nuspec"
+      ]
+    },
+    "Uno.UI.HotDesign/1.17.155": {
+      "sha512": "Df4FrmU09sZHbk7aVADlsCzmO9ef5wA/H3GcSus2M7fnXRc9o9YY6CEoSu2g7hAL3eH4qsC+MsEsAMNIQ6ZD+A==",
+      "type": "package",
+      "path": "uno.ui.hotdesign/1.17.155",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "analyzers/dotnet/cs/Uno.UI.HotDesign.SourceGenerators.dll",
         "build/Uno.UI.HotDesign.props",
+        "build/Uno.UI.HotDesign.targets",
+        "lib/net9.0-android35.0/Uno.AI.XamlGeneration.Contracts.dll",
         "lib/net9.0-android35.0/Uno.UI.HotDesign.Abstractions.dll",
         "lib/net9.0-android35.0/Uno.UI.HotDesign.Abstractions.pdb",
+        "lib/net9.0-android35.0/Uno.UI.HotDesign.Chat.dll",
+        "lib/net9.0-android35.0/Uno.UI.HotDesign.Chat.pdb",
+        "lib/net9.0-android35.0/Uno.UI.HotDesign.Chat.xml",
         "lib/net9.0-android35.0/Uno.UI.HotDesign.Client.Core.dll",
         "lib/net9.0-android35.0/Uno.UI.HotDesign.Client.Core.pdb",
         "lib/net9.0-android35.0/Uno.UI.HotDesign.Client.Core.xml",
@@ -4907,8 +5042,11 @@
         "lib/net9.0-android35.0/Uno.UI.HotDesign.dll",
         "lib/net9.0-android35.0/Uno.UI.HotDesign.pdb",
         "lib/net9.0-android35.0/Uno.UI.HotDesign.xml",
+        "lib/net9.0-ios18.0/Uno.AI.XamlGeneration.Contracts.dll",
         "lib/net9.0-ios18.0/Uno.UI.HotDesign.Abstractions.dll",
         "lib/net9.0-ios18.0/Uno.UI.HotDesign.Abstractions.pdb",
+        "lib/net9.0-ios18.0/Uno.UI.HotDesign.Chat.dll",
+        "lib/net9.0-ios18.0/Uno.UI.HotDesign.Chat.pdb",
         "lib/net9.0-ios18.0/Uno.UI.HotDesign.Client.Core.dll",
         "lib/net9.0-ios18.0/Uno.UI.HotDesign.Client.Core.pdb",
         "lib/net9.0-ios18.0/Uno.UI.HotDesign.Client.dll",
@@ -4933,8 +5071,11 @@
         "lib/net9.0-ios18.0/Uno.UI.HotDesign.Xaml.pdb",
         "lib/net9.0-ios18.0/Uno.UI.HotDesign.dll",
         "lib/net9.0-ios18.0/Uno.UI.HotDesign.pdb",
+        "lib/net9.0-maccatalyst18.0/Uno.AI.XamlGeneration.Contracts.dll",
         "lib/net9.0-maccatalyst18.0/Uno.UI.HotDesign.Abstractions.dll",
         "lib/net9.0-maccatalyst18.0/Uno.UI.HotDesign.Abstractions.pdb",
+        "lib/net9.0-maccatalyst18.0/Uno.UI.HotDesign.Chat.dll",
+        "lib/net9.0-maccatalyst18.0/Uno.UI.HotDesign.Chat.pdb",
         "lib/net9.0-maccatalyst18.0/Uno.UI.HotDesign.Client.Core.dll",
         "lib/net9.0-maccatalyst18.0/Uno.UI.HotDesign.Client.Core.pdb",
         "lib/net9.0-maccatalyst18.0/Uno.UI.HotDesign.Client.dll",
@@ -4959,8 +5100,11 @@
         "lib/net9.0-maccatalyst18.0/Uno.UI.HotDesign.Xaml.pdb",
         "lib/net9.0-maccatalyst18.0/Uno.UI.HotDesign.dll",
         "lib/net9.0-maccatalyst18.0/Uno.UI.HotDesign.pdb",
+        "lib/net9.0-windows10.0.19041/Uno.AI.XamlGeneration.Contracts.dll",
         "lib/net9.0-windows10.0.19041/Uno.UI.HotDesign.Abstractions.dll",
         "lib/net9.0-windows10.0.19041/Uno.UI.HotDesign.Abstractions.pdb",
+        "lib/net9.0-windows10.0.19041/Uno.UI.HotDesign.Chat.dll",
+        "lib/net9.0-windows10.0.19041/Uno.UI.HotDesign.Chat.pdb",
         "lib/net9.0-windows10.0.19041/Uno.UI.HotDesign.Client.Core.dll",
         "lib/net9.0-windows10.0.19041/Uno.UI.HotDesign.Client.Core.pdb",
         "lib/net9.0-windows10.0.19041/Uno.UI.HotDesign.Client.dll",
@@ -4985,8 +5129,11 @@
         "lib/net9.0-windows10.0.19041/Uno.UI.HotDesign.Xaml.pdb",
         "lib/net9.0-windows10.0.19041/Uno.UI.HotDesign.dll",
         "lib/net9.0-windows10.0.19041/Uno.UI.HotDesign.pdb",
+        "lib/net9.0/Uno.AI.XamlGeneration.Contracts.dll",
         "lib/net9.0/Uno.UI.HotDesign.Abstractions.dll",
         "lib/net9.0/Uno.UI.HotDesign.Abstractions.pdb",
+        "lib/net9.0/Uno.UI.HotDesign.Chat.dll",
+        "lib/net9.0/Uno.UI.HotDesign.Chat.pdb",
         "lib/net9.0/Uno.UI.HotDesign.Client.Core.dll",
         "lib/net9.0/Uno.UI.HotDesign.Client.Core.pdb",
         "lib/net9.0/Uno.UI.HotDesign.Client.dll",
@@ -5144,6 +5291,7 @@
         "tools/net9.0/windows/System.Json.dll",
         "tools/net9.0/windows/System.Runtime.InteropServices.WindowsRuntime.dll",
         "tools/net9.0/windows/Tmds.DBus.Protocol.dll",
+        "tools/net9.0/windows/Uno.AI.XamlGeneration.Contracts.dll",
         "tools/net9.0/windows/Uno.Core.Extensions.Collections.dll",
         "tools/net9.0/windows/Uno.Core.Extensions.Disposables.dll",
         "tools/net9.0/windows/Uno.Core.Extensions.Equality.dll",
@@ -5232,12 +5380,28 @@
         "tools/net9.0/windows/Uno.UI.FluentTheme.v2.pdb",
         "tools/net9.0/windows/Uno.UI.HotDesign.Abstractions.dll",
         "tools/net9.0/windows/Uno.UI.HotDesign.Abstractions.pdb",
+        "tools/net9.0/windows/Uno.UI.HotDesign.Chat.dll",
+        "tools/net9.0/windows/Uno.UI.HotDesign.Chat.pdb",
         "tools/net9.0/windows/Uno.UI.HotDesign.Client.Core.dll",
         "tools/net9.0/windows/Uno.UI.HotDesign.Client.Core.pdb",
+        "tools/net9.0/windows/Uno.UI.HotDesign.Client.Core/Assets/AgentBackgroundProgressIcon.png",
+        "tools/net9.0/windows/Uno.UI.HotDesign.Client.Core/Assets/AgentIcon.png",
+        "tools/net9.0/windows/Uno.UI.HotDesign.Client.Core/Assets/ExitHotDesignMode.png",
+        "tools/net9.0/windows/Uno.UI.HotDesign.Client.Core/Assets/Lottie/AAI_38_Active.json",
+        "tools/net9.0/windows/Uno.UI.HotDesign.Client.Core/Assets/Lottie/ActiveBig.json",
+        "tools/net9.0/windows/Uno.UI.HotDesign.Client.Core/Assets/Lottie/AgentBackground1024.json",
+        "tools/net9.0/windows/Uno.UI.HotDesign.Client.Core/Assets/Lottie/CanvasLoading.json",
+        "tools/net9.0/windows/Uno.UI.HotDesign.Client.Core/Assets/Lottie/RestBig.json",
+        "tools/net9.0/windows/Uno.UI.HotDesign.Client.Core/Assets/Placeholder.png",
+        "tools/net9.0/windows/Uno.UI.HotDesign.Client.Core/Assets/StoryEditorBackground.png",
+        "tools/net9.0/windows/Uno.UI.HotDesign.Client.Core/Assets/UnoContainerIcon.png",
+        "tools/net9.0/windows/Uno.UI.HotDesign.Client.Core/Assets/placeholder-blue.png",
+        "tools/net9.0/windows/Uno.UI.HotDesign.Client.Core/Assets/placeholder-green.png",
+        "tools/net9.0/windows/Uno.UI.HotDesign.Client.Core/Assets/placeholder-orange.png",
+        "tools/net9.0/windows/Uno.UI.HotDesign.Client.Core/Assets/placeholder-purple.png",
+        "tools/net9.0/windows/Uno.UI.HotDesign.Client.Core/Assets/placeholder-red.png",
         "tools/net9.0/windows/Uno.UI.HotDesign.Client.dll",
         "tools/net9.0/windows/Uno.UI.HotDesign.Client.pdb",
-        "tools/net9.0/windows/Uno.UI.HotDesign.Client/Assets/ExitHotDesignMode.png",
-        "tools/net9.0/windows/Uno.UI.HotDesign.Client/Assets/Placeholder.png",
         "tools/net9.0/windows/Uno.UI.HotDesign.Client/Assets/unologo.png",
         "tools/net9.0/windows/Uno.UI.HotDesign.Client/Assets/unologo.scale-100.png",
         "tools/net9.0/windows/Uno.UI.HotDesign.Client/Assets/unologo.scale-125.png",
@@ -5316,8 +5480,66 @@
         "tools/net9.0/windows/splash_screen.scale-200.png",
         "tools/net9.0/windows/splash_screen.scale-300.png",
         "tools/net9.0/windows/splash_screen.scale-400.png",
+        "tools/net9.0/windows/uno.ai.xamlgeneration.assets/Anthropic.SDK.dll",
+        "tools/net9.0/windows/uno.ai.xamlgeneration.assets/Azure.AI.OpenAI.dll",
+        "tools/net9.0/windows/uno.ai.xamlgeneration.assets/Azure.Core.dll",
+        "tools/net9.0/windows/uno.ai.xamlgeneration.assets/CommonServiceLocator.dll",
+        "tools/net9.0/windows/uno.ai.xamlgeneration.assets/Microsoft.Bcl.AsyncInterfaces.dll",
+        "tools/net9.0/windows/uno.ai.xamlgeneration.assets/Microsoft.Bcl.HashCode.dll",
+        "tools/net9.0/windows/uno.ai.xamlgeneration.assets/Microsoft.Extensions.AI.Abstractions.dll",
+        "tools/net9.0/windows/uno.ai.xamlgeneration.assets/Microsoft.Extensions.AI.OpenAI.dll",
+        "tools/net9.0/windows/uno.ai.xamlgeneration.assets/Microsoft.Extensions.AI.dll",
+        "tools/net9.0/windows/uno.ai.xamlgeneration.assets/Microsoft.Extensions.Caching.Abstractions.dll",
+        "tools/net9.0/windows/uno.ai.xamlgeneration.assets/Microsoft.Extensions.Primitives.dll",
+        "tools/net9.0/windows/uno.ai.xamlgeneration.assets/Microsoft.Extensions.VectorData.Abstractions.dll",
+        "tools/net9.0/windows/uno.ai.xamlgeneration.assets/Microsoft.SemanticKernel.Abstractions.dll",
+        "tools/net9.0/windows/uno.ai.xamlgeneration.assets/Microsoft.SemanticKernel.Agents.Abstractions.dll",
+        "tools/net9.0/windows/uno.ai.xamlgeneration.assets/Microsoft.SemanticKernel.Agents.Core.dll",
+        "tools/net9.0/windows/uno.ai.xamlgeneration.assets/Microsoft.SemanticKernel.Connectors.AzureOpenAI.dll",
+        "tools/net9.0/windows/uno.ai.xamlgeneration.assets/Microsoft.SemanticKernel.Connectors.OpenAI.dll",
+        "tools/net9.0/windows/uno.ai.xamlgeneration.assets/Microsoft.SemanticKernel.Core.dll",
+        "tools/net9.0/windows/uno.ai.xamlgeneration.assets/Microsoft.SemanticKernel.dll",
+        "tools/net9.0/windows/uno.ai.xamlgeneration.assets/Newtonsoft.Json.dll",
+        "tools/net9.0/windows/uno.ai.xamlgeneration.assets/OpenAI.dll",
+        "tools/net9.0/windows/uno.ai.xamlgeneration.assets/System.ClientModel.dll",
+        "tools/net9.0/windows/uno.ai.xamlgeneration.assets/System.Json.dll",
+        "tools/net9.0/windows/uno.ai.xamlgeneration.assets/System.Memory.Data.dll",
+        "tools/net9.0/windows/uno.ai.xamlgeneration.assets/System.Numerics.Tensors.dll",
+        "tools/net9.0/windows/uno.ai.xamlgeneration.assets/System.Runtime.InteropServices.WindowsRuntime.dll",
+        "tools/net9.0/windows/uno.ai.xamlgeneration.assets/Uno.AI.XamlGeneration.dll",
+        "tools/net9.0/windows/uno.ai.xamlgeneration.assets/Uno.Core.Extensions.Logging.Singleton.dll",
+        "tools/net9.0/windows/uno.ai.xamlgeneration.assets/filelist.txt",
+        "tools/uno.ai.xamlgeneration.assets/Anthropic.SDK.dll",
+        "tools/uno.ai.xamlgeneration.assets/Azure.AI.OpenAI.dll",
+        "tools/uno.ai.xamlgeneration.assets/Azure.Core.dll",
+        "tools/uno.ai.xamlgeneration.assets/CommonServiceLocator.dll",
+        "tools/uno.ai.xamlgeneration.assets/Microsoft.Bcl.AsyncInterfaces.dll",
+        "tools/uno.ai.xamlgeneration.assets/Microsoft.Bcl.HashCode.dll",
+        "tools/uno.ai.xamlgeneration.assets/Microsoft.Extensions.AI.Abstractions.dll",
+        "tools/uno.ai.xamlgeneration.assets/Microsoft.Extensions.AI.OpenAI.dll",
+        "tools/uno.ai.xamlgeneration.assets/Microsoft.Extensions.AI.dll",
+        "tools/uno.ai.xamlgeneration.assets/Microsoft.Extensions.Caching.Abstractions.dll",
+        "tools/uno.ai.xamlgeneration.assets/Microsoft.Extensions.Primitives.dll",
+        "tools/uno.ai.xamlgeneration.assets/Microsoft.Extensions.VectorData.Abstractions.dll",
+        "tools/uno.ai.xamlgeneration.assets/Microsoft.SemanticKernel.Abstractions.dll",
+        "tools/uno.ai.xamlgeneration.assets/Microsoft.SemanticKernel.Agents.Abstractions.dll",
+        "tools/uno.ai.xamlgeneration.assets/Microsoft.SemanticKernel.Agents.Core.dll",
+        "tools/uno.ai.xamlgeneration.assets/Microsoft.SemanticKernel.Connectors.AzureOpenAI.dll",
+        "tools/uno.ai.xamlgeneration.assets/Microsoft.SemanticKernel.Connectors.OpenAI.dll",
+        "tools/uno.ai.xamlgeneration.assets/Microsoft.SemanticKernel.Core.dll",
+        "tools/uno.ai.xamlgeneration.assets/Microsoft.SemanticKernel.dll",
+        "tools/uno.ai.xamlgeneration.assets/Newtonsoft.Json.dll",
+        "tools/uno.ai.xamlgeneration.assets/OpenAI.dll",
+        "tools/uno.ai.xamlgeneration.assets/System.ClientModel.dll",
+        "tools/uno.ai.xamlgeneration.assets/System.Json.dll",
+        "tools/uno.ai.xamlgeneration.assets/System.Memory.Data.dll",
+        "tools/uno.ai.xamlgeneration.assets/System.Numerics.Tensors.dll",
+        "tools/uno.ai.xamlgeneration.assets/System.Runtime.InteropServices.WindowsRuntime.dll",
+        "tools/uno.ai.xamlgeneration.assets/Uno.AI.XamlGeneration.dll",
+        "tools/uno.ai.xamlgeneration.assets/Uno.Core.Extensions.Logging.Singleton.dll",
+        "tools/uno.ai.xamlgeneration.assets/filelist.txt",
         "uno.png",
-        "uno.ui.hotdesign.1.16.109.nupkg.sha512",
+        "uno.ui.hotdesign.1.17.155.nupkg.sha512",
         "uno.ui.hotdesign.nuspec"
       ]
     },
@@ -5334,10 +5556,10 @@
         "uno.wasm.websockets.nuspec"
       ]
     },
-    "Uno.WinRT/6.3.62": {
-      "sha512": "kbM72wVkUQ/m4BAOx62CM7XqV3Z7MhkLlWKhB29I5F1TriMFoKsRDyumpmBT5T3ZbfGT4+lapOXXmlW6lzLnJQ==",
+    "Uno.WinRT/6.4.106": {
+      "sha512": "mfdAxXafVJHaWheEtInv/UMTr3q6PPKuyA3BhFYdWFKSy5yPAlPXbDKIlH3r+Hq1xN3uHfA9lotU5CK5Wxr8Og==",
       "type": "package",
-      "path": "uno.winrt/6.3.62",
+      "path": "uno.winrt/6.4.106",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -5347,18 +5569,18 @@
         "lib/net10.0-android36.0/Uno.UI.Dispatching.pdb",
         "lib/net10.0-android36.0/Uno.dll",
         "lib/net10.0-android36.0/Uno.pdb",
-        "lib/net10.0-ios18.5/Uno.UI.Dispatching.dll",
-        "lib/net10.0-ios18.5/Uno.UI.Dispatching.pdb",
-        "lib/net10.0-ios18.5/Uno.dll",
-        "lib/net10.0-ios18.5/Uno.pdb",
-        "lib/net10.0-maccatalyst18.5/Uno.UI.Dispatching.dll",
-        "lib/net10.0-maccatalyst18.5/Uno.UI.Dispatching.pdb",
-        "lib/net10.0-maccatalyst18.5/Uno.dll",
-        "lib/net10.0-maccatalyst18.5/Uno.pdb",
-        "lib/net10.0-tvos18.5/Uno.UI.Dispatching.dll",
-        "lib/net10.0-tvos18.5/Uno.UI.Dispatching.pdb",
-        "lib/net10.0-tvos18.5/Uno.dll",
-        "lib/net10.0-tvos18.5/Uno.pdb",
+        "lib/net10.0-ios26.0/Uno.UI.Dispatching.dll",
+        "lib/net10.0-ios26.0/Uno.UI.Dispatching.pdb",
+        "lib/net10.0-ios26.0/Uno.dll",
+        "lib/net10.0-ios26.0/Uno.pdb",
+        "lib/net10.0-maccatalyst26.0/Uno.UI.Dispatching.dll",
+        "lib/net10.0-maccatalyst26.0/Uno.UI.Dispatching.pdb",
+        "lib/net10.0-maccatalyst26.0/Uno.dll",
+        "lib/net10.0-maccatalyst26.0/Uno.pdb",
+        "lib/net10.0-tvos26.0/Uno.UI.Dispatching.dll",
+        "lib/net10.0-tvos26.0/Uno.UI.Dispatching.pdb",
+        "lib/net10.0-tvos26.0/Uno.dll",
+        "lib/net10.0-tvos26.0/Uno.pdb",
         "lib/net10.0/Uno.UI.Dispatching.dll",
         "lib/net10.0/Uno.dll",
         "lib/net9.0-android30.0/Uno.UI.Dispatching.dll",
@@ -5397,14 +5619,14 @@
         "uno-runtime/net9.0/webassembly/Uno.dll",
         "uno-runtime/net9.0/webassembly/Uno.pdb",
         "uno.png",
-        "uno.winrt.6.3.62.nupkg.sha512",
+        "uno.winrt.6.4.106.nupkg.sha512",
         "uno.winrt.nuspec"
       ]
     },
-    "Uno.WinUI/6.3.62": {
-      "sha512": "TXf0aew8g0ngHUw8GcfmtHJhgS++zWPplvqk+rs7yu2rgOE6nqeCcJP/ikFTZ0f2NJYPJCXvlHfL2WKs9JNFrA==",
+    "Uno.WinUI/6.4.106": {
+      "sha512": "0g4+ZWgr0T/0/KLnAfB33axSeL+bR49EBzbDhSMHNkSe64K9fdpGVJ0rtK/oapjENqR8tgl77H/MDCAyUprCbg==",
       "type": "package",
-      "path": "uno.winui/6.3.62",
+      "path": "uno.winui/6.4.106",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -5426,16 +5648,16 @@
         "buildTransitive/Uno.UI.Tasks/Mono.Cecil.Pdb.dll",
         "buildTransitive/Uno.UI.Tasks/Mono.Cecil.Rocks.dll",
         "buildTransitive/Uno.UI.Tasks/Mono.Cecil.dll",
-        "buildTransitive/Uno.UI.Tasks/Uno.UI.Tasks.f5598332f077fc64a1ca51762bdab72d20f9538d.dll",
-        "buildTransitive/Uno.UI.Tasks/Uno.UI.Tasks.f5598332f077fc64a1ca51762bdab72d20f9538d.pdb",
+        "buildTransitive/Uno.UI.Tasks/Uno.UI.Tasks.face1be0dba28fc6f75eae7e8c0b09ccf717c7b5.dll",
+        "buildTransitive/Uno.UI.Tasks/Uno.UI.Tasks.face1be0dba28fc6f75eae7e8c0b09ccf717c7b5.pdb",
         "buildTransitive/net10.0-android36.0/uno.winui.props",
         "buildTransitive/net10.0-android36.0/uno.winui.targets",
-        "buildTransitive/net10.0-ios18.5/uno.winui.props",
-        "buildTransitive/net10.0-ios18.5/uno.winui.targets",
-        "buildTransitive/net10.0-maccatalyst18.5/uno.winui.props",
-        "buildTransitive/net10.0-maccatalyst18.5/uno.winui.targets",
-        "buildTransitive/net10.0-tvos18.5/uno.winui.props",
-        "buildTransitive/net10.0-tvos18.5/uno.winui.targets",
+        "buildTransitive/net10.0-ios26.0/uno.winui.props",
+        "buildTransitive/net10.0-ios26.0/uno.winui.targets",
+        "buildTransitive/net10.0-maccatalyst26.0/uno.winui.props",
+        "buildTransitive/net10.0-maccatalyst26.0/uno.winui.targets",
+        "buildTransitive/net10.0-tvos26.0/uno.winui.props",
+        "buildTransitive/net10.0-tvos26.0/uno.winui.targets",
         "buildTransitive/net10.0-windows/uno.winui.props",
         "buildTransitive/net10.0-windows/uno.winui.targets",
         "buildTransitive/net9.0-android30.0/uno.winui.props",
@@ -5479,48 +5701,48 @@
         "lib/net10.0-android36.0/Uno.UI.xml",
         "lib/net10.0-android36.0/Uno.Xaml.dll",
         "lib/net10.0-android36.0/Uno.Xaml.pdb",
-        "lib/net10.0-ios18.5/Uno.UI.Composition.dll",
-        "lib/net10.0-ios18.5/Uno.UI.Composition.pdb",
-        "lib/net10.0-ios18.5/Uno.UI.FluentTheme.dll",
-        "lib/net10.0-ios18.5/Uno.UI.FluentTheme.pdb",
-        "lib/net10.0-ios18.5/Uno.UI.FluentTheme.v1.dll",
-        "lib/net10.0-ios18.5/Uno.UI.FluentTheme.v1.pdb",
-        "lib/net10.0-ios18.5/Uno.UI.FluentTheme.v2.dll",
-        "lib/net10.0-ios18.5/Uno.UI.FluentTheme.v2.pdb",
-        "lib/net10.0-ios18.5/Uno.UI.Toolkit.dll",
-        "lib/net10.0-ios18.5/Uno.UI.Toolkit.pdb",
-        "lib/net10.0-ios18.5/Uno.UI.dll",
-        "lib/net10.0-ios18.5/Uno.UI.pdb",
-        "lib/net10.0-ios18.5/Uno.Xaml.dll",
-        "lib/net10.0-ios18.5/Uno.Xaml.pdb",
-        "lib/net10.0-maccatalyst18.5/Uno.UI.Composition.dll",
-        "lib/net10.0-maccatalyst18.5/Uno.UI.Composition.pdb",
-        "lib/net10.0-maccatalyst18.5/Uno.UI.FluentTheme.dll",
-        "lib/net10.0-maccatalyst18.5/Uno.UI.FluentTheme.pdb",
-        "lib/net10.0-maccatalyst18.5/Uno.UI.FluentTheme.v1.dll",
-        "lib/net10.0-maccatalyst18.5/Uno.UI.FluentTheme.v1.pdb",
-        "lib/net10.0-maccatalyst18.5/Uno.UI.FluentTheme.v2.dll",
-        "lib/net10.0-maccatalyst18.5/Uno.UI.FluentTheme.v2.pdb",
-        "lib/net10.0-maccatalyst18.5/Uno.UI.Toolkit.dll",
-        "lib/net10.0-maccatalyst18.5/Uno.UI.Toolkit.pdb",
-        "lib/net10.0-maccatalyst18.5/Uno.UI.dll",
-        "lib/net10.0-maccatalyst18.5/Uno.UI.pdb",
-        "lib/net10.0-maccatalyst18.5/Uno.Xaml.dll",
-        "lib/net10.0-maccatalyst18.5/Uno.Xaml.pdb",
-        "lib/net10.0-tvos18.5/Uno.UI.Composition.dll",
-        "lib/net10.0-tvos18.5/Uno.UI.Composition.pdb",
-        "lib/net10.0-tvos18.5/Uno.UI.FluentTheme.dll",
-        "lib/net10.0-tvos18.5/Uno.UI.FluentTheme.pdb",
-        "lib/net10.0-tvos18.5/Uno.UI.FluentTheme.v1.dll",
-        "lib/net10.0-tvos18.5/Uno.UI.FluentTheme.v1.pdb",
-        "lib/net10.0-tvos18.5/Uno.UI.FluentTheme.v2.dll",
-        "lib/net10.0-tvos18.5/Uno.UI.FluentTheme.v2.pdb",
-        "lib/net10.0-tvos18.5/Uno.UI.Toolkit.dll",
-        "lib/net10.0-tvos18.5/Uno.UI.Toolkit.pdb",
-        "lib/net10.0-tvos18.5/Uno.UI.dll",
-        "lib/net10.0-tvos18.5/Uno.UI.pdb",
-        "lib/net10.0-tvos18.5/Uno.Xaml.dll",
-        "lib/net10.0-tvos18.5/Uno.Xaml.pdb",
+        "lib/net10.0-ios26.0/Uno.UI.Composition.dll",
+        "lib/net10.0-ios26.0/Uno.UI.Composition.pdb",
+        "lib/net10.0-ios26.0/Uno.UI.FluentTheme.dll",
+        "lib/net10.0-ios26.0/Uno.UI.FluentTheme.pdb",
+        "lib/net10.0-ios26.0/Uno.UI.FluentTheme.v1.dll",
+        "lib/net10.0-ios26.0/Uno.UI.FluentTheme.v1.pdb",
+        "lib/net10.0-ios26.0/Uno.UI.FluentTheme.v2.dll",
+        "lib/net10.0-ios26.0/Uno.UI.FluentTheme.v2.pdb",
+        "lib/net10.0-ios26.0/Uno.UI.Toolkit.dll",
+        "lib/net10.0-ios26.0/Uno.UI.Toolkit.pdb",
+        "lib/net10.0-ios26.0/Uno.UI.dll",
+        "lib/net10.0-ios26.0/Uno.UI.pdb",
+        "lib/net10.0-ios26.0/Uno.Xaml.dll",
+        "lib/net10.0-ios26.0/Uno.Xaml.pdb",
+        "lib/net10.0-maccatalyst26.0/Uno.UI.Composition.dll",
+        "lib/net10.0-maccatalyst26.0/Uno.UI.Composition.pdb",
+        "lib/net10.0-maccatalyst26.0/Uno.UI.FluentTheme.dll",
+        "lib/net10.0-maccatalyst26.0/Uno.UI.FluentTheme.pdb",
+        "lib/net10.0-maccatalyst26.0/Uno.UI.FluentTheme.v1.dll",
+        "lib/net10.0-maccatalyst26.0/Uno.UI.FluentTheme.v1.pdb",
+        "lib/net10.0-maccatalyst26.0/Uno.UI.FluentTheme.v2.dll",
+        "lib/net10.0-maccatalyst26.0/Uno.UI.FluentTheme.v2.pdb",
+        "lib/net10.0-maccatalyst26.0/Uno.UI.Toolkit.dll",
+        "lib/net10.0-maccatalyst26.0/Uno.UI.Toolkit.pdb",
+        "lib/net10.0-maccatalyst26.0/Uno.UI.dll",
+        "lib/net10.0-maccatalyst26.0/Uno.UI.pdb",
+        "lib/net10.0-maccatalyst26.0/Uno.Xaml.dll",
+        "lib/net10.0-maccatalyst26.0/Uno.Xaml.pdb",
+        "lib/net10.0-tvos26.0/Uno.UI.Composition.dll",
+        "lib/net10.0-tvos26.0/Uno.UI.Composition.pdb",
+        "lib/net10.0-tvos26.0/Uno.UI.FluentTheme.dll",
+        "lib/net10.0-tvos26.0/Uno.UI.FluentTheme.pdb",
+        "lib/net10.0-tvos26.0/Uno.UI.FluentTheme.v1.dll",
+        "lib/net10.0-tvos26.0/Uno.UI.FluentTheme.v1.pdb",
+        "lib/net10.0-tvos26.0/Uno.UI.FluentTheme.v2.dll",
+        "lib/net10.0-tvos26.0/Uno.UI.FluentTheme.v2.pdb",
+        "lib/net10.0-tvos26.0/Uno.UI.Toolkit.dll",
+        "lib/net10.0-tvos26.0/Uno.UI.Toolkit.pdb",
+        "lib/net10.0-tvos26.0/Uno.UI.dll",
+        "lib/net10.0-tvos26.0/Uno.UI.pdb",
+        "lib/net10.0-tvos26.0/Uno.Xaml.dll",
+        "lib/net10.0-tvos26.0/Uno.Xaml.pdb",
         "lib/net10.0-windows10.0.19041.0/Uno.UI.Toolkit.dll",
         "lib/net10.0-windows10.0.19041.0/Uno.UI.Toolkit.pdb",
         "lib/net10.0-windows10.0.19041.0/Uno.UI.Toolkit.pri",
@@ -5673,14 +5895,14 @@
         "uno-runtime/net9.0/webassembly/Uno.Xaml.dll",
         "uno-runtime/net9.0/webassembly/Uno.Xaml.pdb",
         "uno.png",
-        "uno.winui.6.3.62.nupkg.sha512",
+        "uno.winui.6.4.106.nupkg.sha512",
         "uno.winui.nuspec"
       ]
     },
-    "Uno.WinUI.DevServer/6.3.62": {
-      "sha512": "Qu1LmYYK6i39tc5nLZamnB+zZtNyZwggRUBdL4aEP0H4SUqDGSrz/Vfy85pD23nVdmbCDkBTZa0oHTm7JR84Bg==",
+    "Uno.WinUI.DevServer/6.4.106": {
+      "sha512": "pbklOzVVB1RPGiIBwwsxHBtNEAriYU0hER6OkkgXvdTkEqYFDozs2/LRUYJvI5iELaM+VchE3rJRLM0MXUQ6jQ==",
       "type": "package",
-      "path": "uno.winui.devserver/6.3.62",
+      "path": "uno.winui.devserver/6.4.106",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -5694,12 +5916,12 @@
         "buildTransitive/Uno.WinUI.DevServer.targets",
         "lib/net10.0-android/Uno.UI.RemoteControl.dll",
         "lib/net10.0-android/Uno.UI.RemoteControl.pdb",
-        "lib/net10.0-ios18.5/Uno.UI.RemoteControl.dll",
-        "lib/net10.0-ios18.5/Uno.UI.RemoteControl.pdb",
-        "lib/net10.0-maccatalyst18.5/Uno.UI.RemoteControl.dll",
-        "lib/net10.0-maccatalyst18.5/Uno.UI.RemoteControl.pdb",
-        "lib/net10.0-tvos18.5/Uno.UI.RemoteControl.dll",
-        "lib/net10.0-tvos18.5/Uno.UI.RemoteControl.pdb",
+        "lib/net10.0-ios26.0/Uno.UI.RemoteControl.dll",
+        "lib/net10.0-ios26.0/Uno.UI.RemoteControl.pdb",
+        "lib/net10.0-maccatalyst26.0/Uno.UI.RemoteControl.dll",
+        "lib/net10.0-maccatalyst26.0/Uno.UI.RemoteControl.pdb",
+        "lib/net10.0-tvos26.0/Uno.UI.RemoteControl.dll",
+        "lib/net10.0-tvos26.0/Uno.UI.RemoteControl.pdb",
         "lib/net10.0-windows10.0.19041.0/_._",
         "lib/net10.0/Uno.UI.RemoteControl.dll",
         "lib/net10.0/Uno.UI.RemoteControl.pdb",
@@ -5717,6 +5939,7 @@
         "tools/rc/17.0/MessagePack.Annotations.dll",
         "tools/rc/17.0/MessagePack.dll",
         "tools/rc/17.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "tools/rc/17.0/Microsoft.Bcl.TimeProvider.dll",
         "tools/rc/17.0/Microsoft.Build.Framework.dll",
         "tools/rc/17.0/Microsoft.Build.Tasks.Core.dll",
         "tools/rc/17.0/Microsoft.Build.Utilities.Core.dll",
@@ -5779,10 +6002,15 @@
         "tools/rc/host/net10.0/Microsoft.ApplicationInsights.dll",
         "tools/rc/host/net10.0/Microsoft.Bcl.AsyncInterfaces.dll",
         "tools/rc/host/net10.0/Microsoft.DotNet.PlatformAbstractions.dll",
+        "tools/rc/host/net10.0/Microsoft.Extensions.AI.Abstractions.dll",
         "tools/rc/host/net10.0/Microsoft.IO.RecyclableMemoryStream.dll",
         "tools/rc/host/net10.0/Microsoft.NET.StringTools.dll",
+        "tools/rc/host/net10.0/Microsoft.VisualStudio.SolutionPersistence.dll",
         "tools/rc/host/net10.0/Microsoft.VisualStudio.Threading.dll",
         "tools/rc/host/net10.0/Microsoft.VisualStudio.Validation.dll",
+        "tools/rc/host/net10.0/ModelContextProtocol.AspNetCore.dll",
+        "tools/rc/host/net10.0/ModelContextProtocol.Core.dll",
+        "tools/rc/host/net10.0/ModelContextProtocol.dll",
         "tools/rc/host/net10.0/Mono.Options.dll",
         "tools/rc/host/net10.0/Nerdbank.Streams.dll",
         "tools/rc/host/net10.0/Newtonsoft.Json.dll",
@@ -5812,14 +6040,20 @@
         "tools/rc/host/net9.0/Microsoft.ApplicationInsights.dll",
         "tools/rc/host/net9.0/Microsoft.Bcl.AsyncInterfaces.dll",
         "tools/rc/host/net9.0/Microsoft.DotNet.PlatformAbstractions.dll",
+        "tools/rc/host/net9.0/Microsoft.Extensions.AI.Abstractions.dll",
         "tools/rc/host/net9.0/Microsoft.IO.RecyclableMemoryStream.dll",
         "tools/rc/host/net9.0/Microsoft.NET.StringTools.dll",
+        "tools/rc/host/net9.0/Microsoft.VisualStudio.SolutionPersistence.dll",
         "tools/rc/host/net9.0/Microsoft.VisualStudio.Threading.dll",
         "tools/rc/host/net9.0/Microsoft.VisualStudio.Validation.dll",
+        "tools/rc/host/net9.0/ModelContextProtocol.AspNetCore.dll",
+        "tools/rc/host/net9.0/ModelContextProtocol.Core.dll",
+        "tools/rc/host/net9.0/ModelContextProtocol.dll",
         "tools/rc/host/net9.0/Mono.Options.dll",
         "tools/rc/host/net9.0/Nerdbank.Streams.dll",
         "tools/rc/host/net9.0/Newtonsoft.Json.dll",
         "tools/rc/host/net9.0/StreamJsonRpc.dll",
+        "tools/rc/host/net9.0/System.Net.ServerSentEvents.dll",
         "tools/rc/host/net9.0/System.Reactive.dll",
         "tools/rc/host/net9.0/Unity.Abstractions.dll",
         "tools/rc/host/net9.0/Unity.Container.dll",
@@ -5998,28 +6232,28 @@
         "uno-runtime/net9.0/webassembly/Uno.UI.RemoteControl.dll",
         "uno-runtime/net9.0/webassembly/Uno.UI.RemoteControl.pdb",
         "uno.png",
-        "uno.winui.devserver.6.3.62.nupkg.sha512",
+        "uno.winui.devserver.6.4.106.nupkg.sha512",
         "uno.winui.devserver.nuspec"
       ]
     },
-    "Uno.WinUI.DevServer.Messaging/6.3.62": {
-      "sha512": "EUzHRaePRjetb1qKNQAKJCScAnjRckRxjKszNhq0egODqSDjb+RCZVLM5jaaVcgLbc5CLZ+dzEDj/M5Z5FZGtQ==",
+    "Uno.WinUI.DevServer.Messaging/6.4.106": {
+      "sha512": "aGXZaj4VjrAqVMO7sNapyChmkgHbCL/H1YG0DA3YwRBHUEyZbbhXbS8Yz7+8xhawvqZDCLeAKLC5e9+q1kGSXA==",
       "type": "package",
-      "path": "uno.winui.devserver.messaging/6.3.62",
+      "path": "uno.winui.devserver.messaging/6.4.106",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard2.0/Uno.UI.RemoteControl.Messaging.dll",
         "lib/netstandard2.0/Uno.UI.RemoteControl.Messaging.pdb",
         "uno.png",
-        "uno.winui.devserver.messaging.6.3.62.nupkg.sha512",
+        "uno.winui.devserver.messaging.6.4.106.nupkg.sha512",
         "uno.winui.devserver.messaging.nuspec"
       ]
     },
-    "Uno.WinUI.Graphics2DSK/6.3.62": {
-      "sha512": "nYozYtFzYu3QqQ2AXnKTQWBo3U+5AjbKYg+dMm90j/zfWFvrvpeAkzc20SphcmiktsXZa9yUskNPPNADoIjH2w==",
+    "Uno.WinUI.Graphics2DSK/6.4.106": {
+      "sha512": "zuYXdRyARYyPaWpTtAwTD0HNB86864gy0TCCkP6Kvf1cZdj5sDfuGMIIrnAZ7pwAtyXHJbxjHoXFj9kSUzVaAA==",
       "type": "package",
-      "path": "uno.winui.graphics2dsk/6.3.62",
+      "path": "uno.winui.graphics2dsk/6.4.106",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6028,15 +6262,15 @@
         "lib/net10.0-android/Uno.WinUI.Graphics2DSK.dll.config",
         "lib/net10.0-android/Uno.WinUI.Graphics2DSK.pdb",
         "lib/net10.0-android/Uno.WinUI.Graphics2DSK.xml",
-        "lib/net10.0-ios18.5/Uno.WinUI.Graphics2DSK.dll",
-        "lib/net10.0-ios18.5/Uno.WinUI.Graphics2DSK.dll.config",
-        "lib/net10.0-ios18.5/Uno.WinUI.Graphics2DSK.pdb",
-        "lib/net10.0-maccatalyst18.5/Uno.WinUI.Graphics2DSK.dll",
-        "lib/net10.0-maccatalyst18.5/Uno.WinUI.Graphics2DSK.dll.config",
-        "lib/net10.0-maccatalyst18.5/Uno.WinUI.Graphics2DSK.pdb",
-        "lib/net10.0-tvos18.5/Uno.WinUI.Graphics2DSK.dll",
-        "lib/net10.0-tvos18.5/Uno.WinUI.Graphics2DSK.dll.config",
-        "lib/net10.0-tvos18.5/Uno.WinUI.Graphics2DSK.pdb",
+        "lib/net10.0-ios26.0/Uno.WinUI.Graphics2DSK.dll",
+        "lib/net10.0-ios26.0/Uno.WinUI.Graphics2DSK.dll.config",
+        "lib/net10.0-ios26.0/Uno.WinUI.Graphics2DSK.pdb",
+        "lib/net10.0-maccatalyst26.0/Uno.WinUI.Graphics2DSK.dll",
+        "lib/net10.0-maccatalyst26.0/Uno.WinUI.Graphics2DSK.dll.config",
+        "lib/net10.0-maccatalyst26.0/Uno.WinUI.Graphics2DSK.pdb",
+        "lib/net10.0-tvos26.0/Uno.WinUI.Graphics2DSK.dll",
+        "lib/net10.0-tvos26.0/Uno.WinUI.Graphics2DSK.dll.config",
+        "lib/net10.0-tvos26.0/Uno.WinUI.Graphics2DSK.pdb",
         "lib/net10.0/Uno.WinUI.Graphics2DSK.deps.json",
         "lib/net10.0/Uno.WinUI.Graphics2DSK.dll",
         "lib/net10.0/Uno.WinUI.Graphics2DSK.dll.config",
@@ -6065,14 +6299,14 @@
         "lib/net9.0/Uno.WinUI.Graphics2DSK.dll.config",
         "lib/net9.0/Uno.WinUI.Graphics2DSK.pdb",
         "uno.png",
-        "uno.winui.graphics2dsk.6.3.62.nupkg.sha512",
+        "uno.winui.graphics2dsk.6.4.106.nupkg.sha512",
         "uno.winui.graphics2dsk.nuspec"
       ]
     },
-    "Uno.WinUI.Lottie/6.3.62": {
-      "sha512": "XLzZqpG5JvJuZBDgHa2k7IK8Uc+ezrmfllpNs+tNkab6yXaB9Htu0YECTtbaDqCEedFQ/rNT5DSuhDtY3B7++Q==",
+    "Uno.WinUI.Lottie/6.4.106": {
+      "sha512": "i7A//IU0D84ZqIwLQlq+rRwyinm74NJwcRgZgtSR9mOI9uTxaqj58zmeMBqbTAf+L/FAKSjIqinbQupFgqPKDA==",
       "type": "package",
-      "path": "uno.winui.lottie/6.3.62",
+      "path": "uno.winui.lottie/6.4.106",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6081,9 +6315,9 @@
         "build/uap10.0.19041/_._",
         "buildTransitive/Uno.WinUI.Lottie.targets",
         "lib/net10.0-android/Uno.UI.Lottie.dll",
-        "lib/net10.0-ios18.5/Uno.UI.Lottie.dll",
-        "lib/net10.0-maccatalyst18.5/Uno.UI.Lottie.dll",
-        "lib/net10.0-tvos18.5/Uno.UI.Lottie.dll",
+        "lib/net10.0-ios26.0/Uno.UI.Lottie.dll",
+        "lib/net10.0-maccatalyst26.0/Uno.UI.Lottie.dll",
+        "lib/net10.0-tvos26.0/Uno.UI.Lottie.dll",
         "lib/net10.0/Uno.UI.Lottie.dll",
         "lib/net9.0-android/Uno.UI.Lottie.dll",
         "lib/net9.0-ios18.0/Uno.UI.Lottie.dll",
@@ -6107,14 +6341,14 @@
         "uno-runtime/net9.0/webassembly/Uno.UI.Lottie.dll.config",
         "uno-runtime/net9.0/webassembly/Uno.UI.Lottie.pdb",
         "uno.png",
-        "uno.winui.lottie.6.3.62.nupkg.sha512",
+        "uno.winui.lottie.6.4.106.nupkg.sha512",
         "uno.winui.lottie.nuspec"
       ]
     },
-    "Uno.WinUI.Runtime.Skia/6.3.62": {
-      "sha512": "BCSS2OEmsYE9f4AUYs2lOZuQ0UYBMiqNTz4jnZA3KqcvvmTmRhJGX94w2Rjs9A4VhFswkKqlkcMIu1JElPpNgw==",
+    "Uno.WinUI.Runtime.Skia/6.4.106": {
+      "sha512": "yrvcRH6ZCTrDXedaetYNc1BtysG2A9bRVm1lOuwfc5cyuC9yLwNxqUpm2nNglx+n51fQiN5eD1uvqwmT3k96PA==",
       "type": "package",
-      "path": "uno.winui.runtime.skia/6.3.62",
+      "path": "uno.winui.runtime.skia/6.4.106",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6123,14 +6357,14 @@
         "lib/net9.0/Uno.UI.Runtime.Skia.dll",
         "lib/net9.0/Uno.UI.Runtime.Skia.pdb",
         "uno.png",
-        "uno.winui.runtime.skia.6.3.62.nupkg.sha512",
+        "uno.winui.runtime.skia.6.4.106.nupkg.sha512",
         "uno.winui.runtime.skia.nuspec"
       ]
     },
-    "Uno.WinUI.Runtime.Skia.Linux.FrameBuffer/6.3.62": {
-      "sha512": "d/Y9VVINkePt8zyjAAJ9tIV8zuqeQfMO2snSIvNYHhgb5TR+t2yx5RsvgpqU9bcPWIsUXnc7G6IOEZmcjCcRow==",
+    "Uno.WinUI.Runtime.Skia.Linux.FrameBuffer/6.4.106": {
+      "sha512": "WgfNgYIJy15lFirtIHQ3pzvQT+KAG1F3Ki56bl9tQotw0dFrf1YI/KcNKw3899HrWSyDAp8mcaqKLQEBzLE+nA==",
       "type": "package",
-      "path": "uno.winui.runtime.skia.linux.framebuffer/6.3.62",
+      "path": "uno.winui.runtime.skia.linux.framebuffer/6.4.106",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6141,14 +6375,14 @@
         "lib/net9.0/Uno.UI.Runtime.Skia.Linux.FrameBuffer.dll",
         "lib/net9.0/Uno.UI.Runtime.Skia.Linux.FrameBuffer.pdb",
         "uno.png",
-        "uno.winui.runtime.skia.linux.framebuffer.6.3.62.nupkg.sha512",
+        "uno.winui.runtime.skia.linux.framebuffer.6.4.106.nupkg.sha512",
         "uno.winui.runtime.skia.linux.framebuffer.nuspec"
       ]
     },
-    "Uno.WinUI.Runtime.Skia.MacOS/6.3.62": {
-      "sha512": "5kjFW+yYt7cqx5hz7evFnGVM/GNpAGkN7FqdKvkpfpDOhN9tpZGgM0C9T8ajgh0cwlEnn/AflT0Ka9LbJPfAtA==",
+    "Uno.WinUI.Runtime.Skia.MacOS/6.4.106": {
+      "sha512": "ulsGMPRw6E/XyQhExrtRJYKqSARdCyHMTTih4RIJAIMupQYrkPw1ftJ/772Lh8c6dK1zSFkubgp5u1n5h2lXQQ==",
       "type": "package",
-      "path": "uno.winui.runtime.skia.macos/6.3.62",
+      "path": "uno.winui.runtime.skia.macos/6.4.106",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6160,14 +6394,14 @@
         "lib/net9.0/Uno.UI.Runtime.Skia.MacOS.pdb",
         "runtimes/osx/native/libUnoNativeMac.dylib",
         "uno.png",
-        "uno.winui.runtime.skia.macos.6.3.62.nupkg.sha512",
+        "uno.winui.runtime.skia.macos.6.4.106.nupkg.sha512",
         "uno.winui.runtime.skia.macos.nuspec"
       ]
     },
-    "Uno.WinUI.Runtime.Skia.Win32/6.3.62": {
-      "sha512": "b5AR5AwgVCRmgj3AqJiWXVvebPx1peaU8SdPT02U4ApCGuRWZcM79ZHG7U0wKZ67QrvcTKLFAu+tQhhx30WLPw==",
+    "Uno.WinUI.Runtime.Skia.Win32/6.4.106": {
+      "sha512": "L/JdBYDCwu2HzdqEm34EundCV/DqdMXEDZjF5x08wSgRJKRxZJaiCtlg0BBT4EE/c3l5RFK0EmQpY9T2n/v1hQ==",
       "type": "package",
-      "path": "uno.winui.runtime.skia.win32/6.3.62",
+      "path": "uno.winui.runtime.skia.win32/6.4.106",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6182,14 +6416,14 @@
         "lib/net9.0/Uno.UI.Runtime.Skia.Win32.dll",
         "lib/net9.0/Uno.UI.Runtime.Skia.Win32.pdb",
         "uno.png",
-        "uno.winui.runtime.skia.win32.6.3.62.nupkg.sha512",
+        "uno.winui.runtime.skia.win32.6.4.106.nupkg.sha512",
         "uno.winui.runtime.skia.win32.nuspec"
       ]
     },
-    "Uno.WinUI.Runtime.Skia.Wpf/6.3.62": {
-      "sha512": "7ZCsm68jKD6w8e6kAKXYRYLIU0VInRKZi6q62Edq91mhR0xLnK9KzdhVEC4Rvn5Oijy7XPW+t7BPvjSZnJSFzQ==",
+    "Uno.WinUI.Runtime.Skia.Wpf/6.4.106": {
+      "sha512": "/TSFnWu6DXy9t6d6Pzn8mc0yHO+k4EFgWYXI/zB0rwFL0s8atjGoYgfx0v4KX1HlFtj4jiTOGypv79iSNLBcpg==",
       "type": "package",
-      "path": "uno.winui.runtime.skia.wpf/6.3.62",
+      "path": "uno.winui.runtime.skia.wpf/6.4.106",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6200,14 +6434,14 @@
         "lib/net9.0/Uno.UI.Runtime.Skia.Wpf.dll",
         "lib/net9.0/Uno.UI.Runtime.Skia.Wpf.pdb",
         "uno.png",
-        "uno.winui.runtime.skia.wpf.6.3.62.nupkg.sha512",
+        "uno.winui.runtime.skia.wpf.6.4.106.nupkg.sha512",
         "uno.winui.runtime.skia.wpf.nuspec"
       ]
     },
-    "Uno.WinUI.Runtime.Skia.X11/6.3.62": {
-      "sha512": "sEvA/v4gaO9C94jAMCoA6GpGl071vxSFhwHRseO/fL4X20Zdkl3OBJhpJZL2E8EbCRkzlVGrKKzoR0uWLwsGnw==",
+    "Uno.WinUI.Runtime.Skia.X11/6.4.106": {
+      "sha512": "9Z3UkrjTi3hwmGfWU4i+UuoLqNNMZVcspktmb43gMdr10yGfy78tst9REc+uJfSTHd4ymY1UcFaE8/iWyj12ng==",
       "type": "package",
-      "path": "uno.winui.runtime.skia.x11/6.3.62",
+      "path": "uno.winui.runtime.skia.x11/6.4.106",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6218,7 +6452,7 @@
         "lib/net9.0/Uno.UI.Runtime.Skia.X11.dll",
         "lib/net9.0/Uno.UI.Runtime.Skia.X11.pdb",
         "uno.png",
-        "uno.winui.runtime.skia.x11.6.3.62.nupkg.sha512",
+        "uno.winui.runtime.skia.x11.6.4.106.nupkg.sha512",
         "uno.winui.runtime.skia.x11.nuspec"
       ]
     }
@@ -6226,50 +6460,58 @@
   "projectFileDependencyGroups": {
     "net9.0-desktop1.0": [
       "CommunityToolkit.Mvvm >= 8.4.0",
-      "Microsoft.Extensions.Logging.Console >= 9.0.9",
+      "Microsoft.Extensions.Logging.Console >= 9.0.11",
       "SkiaSharp.Skottie >= 3.119.1",
       "SkiaSharp.Views.Uno.WinUI >= 3.119.1",
-      "Uno.Extensions.Core.WinUI >= 6.2.3",
-      "Uno.Fonts.OpenSans >= 2.7.1",
-      "Uno.Resizetizer >= 1.11.1",
+      "Uno.Extensions.Core.WinUI >= 7.0.4",
+      "Uno.Fonts.OpenSans >= 2.8.1",
+      "Uno.Resizetizer >= 1.12.1",
       "Uno.Sdk.Extras >= 6.1.1",
-      "Uno.Settings.DevServer >= 1.6.3",
-      "Uno.Toolkit.WinUI >= 8.2.4",
-      "Uno.UI.Adapter.Microsoft.Extensions.Logging >= 6.3.62",
-      "Uno.UI.HotDesign >= 1.16.109",
-      "Uno.WinUI >= 6.3.62",
-      "Uno.WinUI.DevServer >= 6.3.62",
-      "Uno.WinUI.Graphics2DSK >= 6.3.62",
-      "Uno.WinUI.Lottie >= 6.3.62",
-      "Uno.WinUI.Runtime.Skia.Linux.FrameBuffer >= 6.3.62",
-      "Uno.WinUI.Runtime.Skia.MacOS >= 6.3.62",
-      "Uno.WinUI.Runtime.Skia.Win32 >= 6.3.62",
-      "Uno.WinUI.Runtime.Skia.Wpf >= 6.3.62",
-      "Uno.WinUI.Runtime.Skia.X11 >= 6.3.62"
+      "Uno.Settings.DevServer >= 1.7.1",
+      "Uno.Toolkit.WinUI >= 8.3.2",
+      "Uno.UI.Adapter.Microsoft.Extensions.Logging >= 6.4.106",
+      "Uno.UI.App.Mcp >= 1.0.7",
+      "Uno.UI.HotDesign >= 1.17.155",
+      "Uno.WinUI >= 6.4.106",
+      "Uno.WinUI.DevServer >= 6.4.106",
+      "Uno.WinUI.Graphics2DSK >= 6.4.106",
+      "Uno.WinUI.Lottie >= 6.4.106",
+      "Uno.WinUI.Runtime.Skia.Linux.FrameBuffer >= 6.4.106",
+      "Uno.WinUI.Runtime.Skia.MacOS >= 6.4.106",
+      "Uno.WinUI.Runtime.Skia.Win32 >= 6.4.106",
+      "Uno.WinUI.Runtime.Skia.Wpf >= 6.4.106",
+      "Uno.WinUI.Runtime.Skia.X11 >= 6.4.106"
     ]
   },
   "packageFolders": {
-    "/home/user/.nuget/packages/": {}
+    "C:\\Users\\victo\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/user/src/Mini-Banque/client/MiniBanque.Client/MiniBanque.Client/MiniBanque.Client.csproj",
+      "projectUniqueName": "C:\\Users\\victo\\Projet\\Cours-info\\MiniBanque.Client\\MiniBanque.Client.csproj",
       "projectName": "MiniBanque.Client",
-      "projectPath": "/home/user/src/Mini-Banque/client/MiniBanque.Client/MiniBanque.Client/MiniBanque.Client.csproj",
-      "packagesPath": "/home/user/.nuget/packages/",
-      "outputPath": "/home/user/src/Mini-Banque/client/MiniBanque.Client/MiniBanque.Client/obj/",
+      "projectPath": "C:\\Users\\victo\\Projet\\Cours-info\\MiniBanque.Client\\MiniBanque.Client.csproj",
+      "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\victo\\Projet\\Cours-info\\MiniBanque.Client\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "centralPackageVersionsManagementEnabled": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/user/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\victo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net9.0-desktop"
       ],
       "sources": {
-        "/usr/share/dotnet/library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -6291,7 +6533,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net9.0-desktop1.0": {
@@ -6304,7 +6546,7 @@
           },
           "Microsoft.Extensions.Logging.Console": {
             "target": "Package",
-            "version": "[9.0.9, )",
+            "version": "[9.0.11, )",
             "autoReferenced": true
           },
           "SkiaSharp.Skottie": {
@@ -6319,18 +6561,18 @@
           },
           "Uno.Extensions.Core.WinUI": {
             "target": "Package",
-            "version": "[6.2.3, )",
+            "version": "[7.0.4, )",
             "autoReferenced": true
           },
           "Uno.Fonts.OpenSans": {
             "target": "Package",
-            "version": "[2.7.1, )",
+            "version": "[2.8.1, )",
             "autoReferenced": true
           },
           "Uno.Resizetizer": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[1.11.1, )",
+            "version": "[1.12.1, )",
             "autoReferenced": true
           },
           "Uno.Sdk.Extras": {
@@ -6342,67 +6584,72 @@
           "Uno.Settings.DevServer": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "[1.6.3, )",
+            "version": "[1.7.1, )",
             "autoReferenced": true
           },
           "Uno.Toolkit.WinUI": {
             "target": "Package",
-            "version": "[8.2.4, )",
+            "version": "[8.3.2, )",
             "autoReferenced": true
           },
           "Uno.UI.Adapter.Microsoft.Extensions.Logging": {
             "target": "Package",
-            "version": "[6.3.62, )",
+            "version": "[6.4.106, )",
+            "autoReferenced": true
+          },
+          "Uno.UI.App.Mcp": {
+            "target": "Package",
+            "version": "[1.0.7, )",
             "autoReferenced": true
           },
           "Uno.UI.HotDesign": {
             "target": "Package",
-            "version": "[1.16.109, )",
+            "version": "[1.17.155, )",
             "autoReferenced": true
           },
           "Uno.WinUI": {
             "target": "Package",
-            "version": "[6.3.62, )",
+            "version": "[6.4.106, )",
             "autoReferenced": true
           },
           "Uno.WinUI.DevServer": {
             "target": "Package",
-            "version": "[6.3.62, )",
+            "version": "[6.4.106, )",
             "autoReferenced": true
           },
           "Uno.WinUI.Graphics2DSK": {
             "target": "Package",
-            "version": "[6.3.62, )",
+            "version": "[6.4.106, )",
             "autoReferenced": true
           },
           "Uno.WinUI.Lottie": {
             "target": "Package",
-            "version": "[6.3.62, )",
+            "version": "[6.4.106, )",
             "autoReferenced": true
           },
           "Uno.WinUI.Runtime.Skia.Linux.FrameBuffer": {
             "target": "Package",
-            "version": "[6.3.62, )",
+            "version": "[6.4.106, )",
             "autoReferenced": true
           },
           "Uno.WinUI.Runtime.Skia.MacOS": {
             "target": "Package",
-            "version": "[6.3.62, )",
+            "version": "[6.4.106, )",
             "autoReferenced": true
           },
           "Uno.WinUI.Runtime.Skia.Win32": {
             "target": "Package",
-            "version": "[6.3.62, )",
+            "version": "[6.4.106, )",
             "autoReferenced": true
           },
           "Uno.WinUI.Runtime.Skia.Wpf": {
             "target": "Package",
-            "version": "[6.3.62, )",
+            "version": "[6.4.106, )",
             "autoReferenced": true
           },
           "Uno.WinUI.Runtime.Skia.X11": {
             "target": "Package",
-            "version": "[6.3.62, )",
+            "version": "[6.4.106, )",
             "autoReferenced": true
           }
         },
@@ -6422,7 +6669,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/9.0.305/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

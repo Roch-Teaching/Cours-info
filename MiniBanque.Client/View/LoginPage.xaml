@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="MiniBanque.Client.View.LoginPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MiniBanque.Client.View"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" 
+                    VerticalAlignment="Center" 
+                    Spacing="15" 
+                    Width="320">
+
+            <TextBlock Text="Connexion MiniBanque" 
+                       FontSize="28" 
+                       FontWeight="Bold" 
+                       HorizontalAlignment="Center"
+                       Margin="0,0,0,20"/>
+
+            <TextBox x:Name="EmailBox" 
+                     PlaceholderText="Adresse email" 
+                     Header="Email"/>
+
+            <PasswordBox x:Name="PasswordBox" 
+                         PlaceholderText="Mot de passe" 
+                         Header="Mot de passe"/>
+
+            <Button Content="Se connecter" 
+                    Click="OnLoginClicked" 
+                    HorizontalAlignment="Stretch" 
+                    Margin="0,10,0,0"
+                    Style="{StaticResource AccentButtonStyle}"/>
+
+            <Button Content="Pas encore de compte ? S'inscrire" 
+                    Click="OnRegisterClicked" 
+                    Background="Transparent" 
+                    HorizontalAlignment="Center" 
+                    FontSize="12"/>
+        </StackPanel>
+    </Grid>
+</Page>

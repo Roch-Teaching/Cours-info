@@ -1,0 +1,44 @@
+﻿<Page
+    x:Class="MiniBanque.Client.View.RegisterPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MiniBanque.Client.View"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid>
+            <StackPanel HorizontalAlignment="Center" 
+                        VerticalAlignment="Center" 
+                        Spacing="15" 
+                        Width="350"
+                        Margin="0,40,0,40">
+
+                <TextBlock Text="Créer un compte" 
+                           FontSize="28" 
+                           FontWeight="Bold" 
+                           HorizontalAlignment="Center"
+                           Margin="0,0,0,20"/>
+
+                <TextBox x:Name="FirstNameBox" Header="Prénom" PlaceholderText="Ex: Jean"/>
+                <TextBox x:Name="LastNameBox" Header="Nom" PlaceholderText="Ex: Dupont"/>
+                <TextBox x:Name="UsernameBox" Header="Nom d'utilisateur" PlaceholderText="Ex: jdupont"/>
+                <TextBox x:Name="EmailBox" Header="Email" PlaceholderText="Ex: jean.dupont@email.com"/>
+
+                <PasswordBox x:Name="PasswordBox" Header="Mot de passe"/>
+                <PasswordBox x:Name="ConfirmPasswordBox" Header="Confirmer le mot de passe"/>
+
+                <Button Content="S'inscrire" 
+                        Click="OnRegisterSubmitClicked" 
+                        HorizontalAlignment="Stretch" 
+                        Margin="0,10,0,0"
+                        Style="{StaticResource AccentButtonStyle}"/>
+
+                <Button Content="Déjà un compte ? Se connecter" 
+                        Click="OnCancelClicked" 
+                        Background="Transparent" 
+                        HorizontalAlignment="Center" 
+                        FontSize="12"/>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Page>
