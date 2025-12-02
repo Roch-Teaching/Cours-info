@@ -2,10 +2,10 @@
 
     <Grid>
         <StackPanel Margin="20">
-            <Button Content="Retour" Click="OnCancelClicked"/>
+            <Button Content="Retour" Click="OnCancelClicked" />
             <TextBox x:Name="IpAddressText" PlaceholderText="IP" Margin="0,5" />
             <TextBox x:Name="UsernameText" PlaceholderText="User" Margin="0,5" />
-            <TextBox x:Name="PasswordText" PlaceholderText="Pass"  Margin="0,5" />
+            <TextBox x:Name="PasswordText" PlaceholderText="Pass" Margin="0,5" />
             <TextBox x:Name="CommandText" PlaceholderText="Cmd" Margin="0,5" />
             <Button Content="Test" Margin="0,5" />
             <TextBlock x:Name="DebugOutputText" Margin="0,5" />

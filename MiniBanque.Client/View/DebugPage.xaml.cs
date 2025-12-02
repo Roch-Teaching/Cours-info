@@ -6,12 +6,13 @@ namespace MiniBanque.Client.View
 {
     public sealed partial class DebugPage : Page
     {
-       public DebugPage() {
-       this.InitializeComponent(); 
-       }
-           private void OnCancelClicked(object sender, RoutedEventArgs e)
-    {
-        this.Frame.Navigate(typeof(LoginPage));
-    }
+        public DebugPage()
+        {
+            this.InitializeComponent();
+        }
+        private void OnCancelClicked(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(LoginPage));
+        }
     }
 }

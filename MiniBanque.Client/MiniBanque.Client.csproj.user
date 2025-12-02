@@ -1,6 +1,6 @@
 <Project>
 	<PropertyGroup Condition="'$(UnoForceSingleTFM)'=='true'">
-		<TargetFramework>net9.0-desktop</TargetFramework>
+		<TargetFramework>net10.0-desktop</TargetFramework>
 		<Configuration>Debug</Configuration>
 	</PropertyGroup>
 	<PropertyGroup>
