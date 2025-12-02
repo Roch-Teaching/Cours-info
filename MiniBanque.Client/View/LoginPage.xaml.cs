@@ -43,4 +43,9 @@ public sealed partial class LoginPage : Page
         // TODO: Naviguer vers la page d'inscription
         this.Frame.Navigate(typeof(RegisterPage));
     }
+
+    private void OnDebugClicked(object sender, RoutedEventArgs e)
+    {
+        this.Frame.Navigate(typeof(DebugPage));
+    }
 }

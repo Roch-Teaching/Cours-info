@@ -57,5 +57,8 @@
             <Generator>MSBuild:Compile</Generator>
         </Page>
     </ItemGroup>
+    <ItemGroup>
+      <PackageReference Include="Grpc.Core" />
+    </ItemGroup>
 
 </Project>
