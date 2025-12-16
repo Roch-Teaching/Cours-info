@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\victo\\Projet\\Cours-info\\MiniBanque.Client\\MiniBanque.Client.csproj": {}
+    "C:\\Users\\jeang\\Documents\\Bac3\\Client_Interface\\Cours-info\\MiniBanque.Client\\MiniBanque.Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\victo\\Projet\\Cours-info\\MiniBanque.Client\\MiniBanque.Client.csproj": {
+    "C:\\Users\\jeang\\Documents\\Bac3\\Client_Interface\\Cours-info\\MiniBanque.Client\\MiniBanque.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\victo\\Projet\\Cours-info\\MiniBanque.Client\\MiniBanque.Client.csproj",
+        "projectUniqueName": "C:\\Users\\jeang\\Documents\\Bac3\\Client_Interface\\Cours-info\\MiniBanque.Client\\MiniBanque.Client.csproj",
         "projectName": "MiniBanque.Client",
-        "projectPath": "C:\\Users\\victo\\Projet\\Cours-info\\MiniBanque.Client\\MiniBanque.Client.csproj",
-        "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\victo\\Projet\\Cours-info\\MiniBanque.Client\\obj\\",
+        "projectPath": "C:\\Users\\jeang\\Documents\\Bac3\\Client_Interface\\Cours-info\\MiniBanque.Client\\MiniBanque.Client.csproj",
+        "packagesPath": "C:\\Users\\jeang\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jeang\\Documents\\Bac3\\Client_Interface\\Cours-info\\MiniBanque.Client\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "centralPackageVersionsManagementEnabled": true,
@@ -19,21 +19,25 @@
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\victo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\jeang\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
+          "net10.0-desktop",
           "net9.0-desktop"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0-desktop1.0": {
             "targetAlias": "net9.0-desktop",
+            "projectReferences": {}
+          },
+          "net10.0-desktop1.0": {
+            "targetAlias": "net10.0-desktop",
             "projectReferences": {}
           }
         },
@@ -48,7 +52,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         },
         "SdkAnalysisLevel": "10.0.100"
       },
@@ -60,6 +64,23 @@
               "target": "Package",
               "version": "[8.4.0, )",
               "autoReferenced": true
+            },
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.33.2, )",
+              "versionCentrallyManaged": true
+            },
+            "Grpc.Net.Client": {
+              "target": "Package",
+              "version": "[2.71.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Grpc.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.76.0, )",
+              "versionCentrallyManaged": true
             },
             "Microsoft.Extensions.Logging.Console": {
               "target": "Package",
@@ -169,6 +190,168 @@
               "version": "[6.4.106, )",
               "autoReferenced": true
             }
+          },
+          "centralPackageVersions": {
+            "Google.Protobuf": "3.33.2",
+            "Grpc.Net.Client": "2.71.0",
+            "Grpc.Tools": "2.76.0"
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
+        },
+        "net10.0-desktop1.0": {
+          "targetAlias": "net10.0-desktop",
+          "dependencies": {
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.4.0, )",
+              "autoReferenced": true
+            },
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.33.2, )",
+              "versionCentrallyManaged": true
+            },
+            "Grpc.Net.Client": {
+              "target": "Package",
+              "version": "[2.71.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Grpc.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.76.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Microsoft.Extensions.Logging.Console": {
+              "target": "Package",
+              "version": "[10.0.0, )",
+              "autoReferenced": true
+            },
+            "SkiaSharp.Skottie": {
+              "target": "Package",
+              "version": "[3.119.1, )",
+              "autoReferenced": true
+            },
+            "SkiaSharp.Views.Uno.WinUI": {
+              "target": "Package",
+              "version": "[3.119.1, )",
+              "autoReferenced": true
+            },
+            "Uno.Extensions.Core.WinUI": {
+              "target": "Package",
+              "version": "[7.0.4, )",
+              "autoReferenced": true
+            },
+            "Uno.Fonts.OpenSans": {
+              "target": "Package",
+              "version": "[2.8.1, )",
+              "autoReferenced": true
+            },
+            "Uno.Resizetizer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.12.1, )",
+              "autoReferenced": true
+            },
+            "Uno.Sdk.Extras": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.1.1, )",
+              "autoReferenced": true
+            },
+            "Uno.Settings.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.7.1, )",
+              "autoReferenced": true
+            },
+            "Uno.Toolkit.WinUI": {
+              "target": "Package",
+              "version": "[8.3.2, )",
+              "autoReferenced": true
+            },
+            "Uno.UI.Adapter.Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[6.4.106, )",
+              "autoReferenced": true
+            },
+            "Uno.UI.App.Mcp": {
+              "target": "Package",
+              "version": "[1.0.7, )",
+              "autoReferenced": true
+            },
+            "Uno.UI.HotDesign": {
+              "target": "Package",
+              "version": "[1.17.155, )",
+              "autoReferenced": true
+            },
+            "Uno.WinUI": {
+              "target": "Package",
+              "version": "[6.4.106, )",
+              "autoReferenced": true
+            },
+            "Uno.WinUI.DevServer": {
+              "target": "Package",
+              "version": "[6.4.106, )",
+              "autoReferenced": true
+            },
+            "Uno.WinUI.Graphics2DSK": {
+              "target": "Package",
+              "version": "[6.4.106, )",
+              "autoReferenced": true
+            },
+            "Uno.WinUI.Lottie": {
+              "target": "Package",
+              "version": "[6.4.106, )",
+              "autoReferenced": true
+            },
+            "Uno.WinUI.Runtime.Skia.Linux.FrameBuffer": {
+              "target": "Package",
+              "version": "[6.4.106, )",
+              "autoReferenced": true
+            },
+            "Uno.WinUI.Runtime.Skia.MacOS": {
+              "target": "Package",
+              "version": "[6.4.106, )",
+              "autoReferenced": true
+            },
+            "Uno.WinUI.Runtime.Skia.Win32": {
+              "target": "Package",
+              "version": "[6.4.106, )",
+              "autoReferenced": true
+            },
+            "Uno.WinUI.Runtime.Skia.Wpf": {
+              "target": "Package",
+              "version": "[6.4.106, )",
+              "autoReferenced": true
+            },
+            "Uno.WinUI.Runtime.Skia.X11": {
+              "target": "Package",
+              "version": "[6.4.106, )",
+              "autoReferenced": true
+            }
+          },
+          "centralPackageVersions": {
+            "Google.Protobuf": "3.33.2",
+            "Grpc.Net.Client": "2.71.0",
+            "Grpc.Tools": "2.76.0"
           },
           "imports": [
             "net461",

@@ -1,14 +1,17 @@
 <Project>
-	<PropertyGroup Condition="'$(UnoForceSingleTFM)'=='true'">
-		<TargetFramework>net10.0-desktop</TargetFramework>
-		<Configuration>Debug</Configuration>
-	</PropertyGroup>
-	<PropertyGroup>
-		<UnoPlatformIDE>vscode</UnoPlatformIDE>
-		<UnoPlatformIDEVersion>1.106.3</UnoPlatformIDEVersion>
-		<UnoPlatformExtension>unoplatform.vscode 0.23.6</UnoPlatformExtension>
-		<UnoRemoteControlPort>39277</UnoRemoteControlPort>
-		<UnoVSCodeCSharpExtension>ms-dotnettools.csharp 2.100.11</UnoVSCodeCSharpExtension>
-		<UnoVSCodeCSharpDevKitExtension>ms-dotnettools.csdevkit 1.80.7</UnoVSCodeCSharpDevKitExtension>
-	</PropertyGroup>
+  <PropertyGroup Condition="'$(UnoForceSingleTFM)'=='true'">
+    <TargetFramework>net10.0-desktop</TargetFramework>
+    <Configuration>Debug</Configuration>
+  </PropertyGroup>
+  <PropertyGroup>
+    <UnoPlatformIDE>vscode</UnoPlatformIDE>
+    <UnoPlatformIDEVersion>1.106.3</UnoPlatformIDEVersion>
+    <UnoPlatformExtension>unoplatform.vscode 0.23.6</UnoPlatformExtension>
+    <UnoRemoteControlPort>39277</UnoRemoteControlPort>
+    <UnoVSCodeCSharpExtension>ms-dotnettools.csharp 2.100.11</UnoVSCodeCSharpExtension>
+    <UnoVSCodeCSharpDevKitExtension>ms-dotnettools.csdevkit 1.80.7</UnoVSCodeCSharpDevKitExtension>
+    <_UnoSelectedTargetFramework>net10.0-desktop</_UnoSelectedTargetFramework>
+    <ActiveDebugProfile>MiniBanque.Client (Desktop)</ActiveDebugProfile>
+    <ActiveDebugFramework>net10.0-desktop</ActiveDebugFramework>
+  </PropertyGroup>
 </Project>

@@ -27,15 +27,16 @@ public sealed partial class LoginPage : Page
         this.InitializeComponent();
     }
 
-    private void OnLoginClicked(object sender, RoutedEventArgs e)
+    private async void OnLoginClicked(object sender, RoutedEventArgs e)
     {
-        // TODO: Plus tard, on ajoutera ici la validation gRPC
+        string username = usernameTextBox.Text;
+        string password = PasswordBox.Password;
+        if (username != null && password != null)
+        {
+            await Controller.Gestion.connect(username, password);
 
-        // Pour l'instant, on simule une connexion réussie
-        // On navigue vers le Dashboard (qu'on va créer juste après)
-        // Attention: cette ligne plantera tant que DashboardPage n'existe pas, 
-        // donc commente-la si tu n'as pas encore créé la page Dashboard.
-       this.Frame.Navigate(typeof(DashboardPage));
+            this.Frame.Navigate(typeof(DashboardPage));
+        }
     }
 
     private void OnRegisterClicked(object sender, RoutedEventArgs e)
