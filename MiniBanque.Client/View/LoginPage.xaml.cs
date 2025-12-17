@@ -12,6 +12,7 @@ using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Microsoft.UI.Xaml.Controls;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -22,6 +23,7 @@ namespace MiniBanque.Client.View;
 /// </summary>
 public sealed partial class LoginPage : Page
 {
+    private bool isConnected = false;
     public LoginPage()
     {
         this.InitializeComponent();
@@ -33,9 +35,22 @@ public sealed partial class LoginPage : Page
         string password = PasswordBox.Password;
         if (username != null && password != null)
         {
-            await Controller.Gestion.connect(username, password);
-
-            this.Frame.Navigate(typeof(DashboardPage));
+            isConnected = await Controller.Gestion.connect(username, password);
+            if (isConnected)
+            {
+                this.Frame.Navigate(typeof(DashboardPage));
+            }
+            else
+            {
+                ContentDialog dialog = new ContentDialog
+                {
+                    Title = "Erreur de connexion",
+                    Content = "Échec de la connexion. Vérifiez vos identifiants.",
+                    CloseButtonText = "OK",
+                    XamlRoot = this.XamlRoot
+                };
+                await dialog.ShowAsync();
+            }
         }
     }
 
