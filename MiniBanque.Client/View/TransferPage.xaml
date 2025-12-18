@@ -8,49 +8,67 @@
     <Grid>
         <StackPanel MaxWidth="400" Spacing="20" VerticalAlignment="Center">
 
-            <TextBlock Text="Effectuer un virement" 
-                       FontSize="28" FontWeight="Bold" 
-                       HorizontalAlignment="Center" Margin="0,0,0,20"/>
+            <TextBlock Text="Effectuer un virement"
+                       FontSize="28"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center"
+                       Margin="0,0,0,20" />
 
-            <ComboBox x:Name="SourceAccountCombo" 
-                      Header="Compte à débiter" 
+            <!-- Zone d'erreur/succès -->
+            <InfoBar x:Name="MessageInfoBar"
+                     IsOpen="False"
+                     IsClosable="True"
+                     Margin="0,0,0,10" />
+
+            <!-- Compte source (liste des comptes de l'utilisateur) -->
+            <ComboBox x:Name="SourceAccountCombo"
+                      Header="Compte à débiter"
                       PlaceholderText="Sélectionnez un compte"
-                      HorizontalAlignment="Stretch">
-                <ComboBoxItem Content="Compte Courant (1 250 €)" IsSelected="True"/>
-                <ComboBoxItem Content="Livret A (4 000 €)"/>
-            </ComboBox>
+                      HorizontalAlignment="Stretch"
+                      SelectionChanged="SourceAccountCombo_SelectionChanged" />
 
-            <TextBox x:Name="DestinationAccountBox" 
-                     Header="Compte destinataire (ID ou Email)" 
-                     PlaceholderText="Ex: 42 ou ami@mail.com"/>
+            <!-- Champ de saisie pour l'ID du compte destinataire -->
+            <TextBox x:Name="DestinationAccountIdBox"
+                     Header="ID du compte destinataire"
+                     PlaceholderText="Saisissez l'ID du compte destinataire" />
 
-            <NumberBox x:Name="AmountBox" 
-                       Header="Montant (€)" 
+            <!-- Montant -->
+            <NumberBox x:Name="AmountBox"
+                       Header="Montant (€)"
                        PlaceholderText="0.00"
                        Minimum="0"
-                       SpinButtonPlacementMode="Inline"/>
+                       SpinButtonPlacementMode="Hidden" />
 
-            <TextBox x:Name="DescriptionBox" 
-                     Header="Motif du virement" 
-                     PlaceholderText="Ex: Remboursement resto"/>
+            <!-- Description -->
+            <TextBox x:Name="DescriptionBox"
+                     Header="Motif du virement"
+                     PlaceholderText="Ex: Remboursement resto" />
 
             <Grid ColumnSpacing="10" Margin="0,20,0,0">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
-                <Button Grid.Column="0" 
-                        Content="Annuler" 
+                <Button Grid.Column="0"
+                        Content="Annuler"
                         HorizontalAlignment="Stretch"
-                        Click="OnCancelClicked"/>
+                        Click="OnCancelClicked" />
 
-                <Button Grid.Column="1" 
-                        Content="Valider" 
-                        Style="{StaticResource AccentButtonStyle}" 
+                <Button Grid.Column="1"
+                        x:Name="ValidateButton"
+                        Content="Valider"
+                        Style="{StaticResource AccentButtonStyle}"
                         HorizontalAlignment="Stretch"
-                        Click="OnTransferClicked"/>
+                        Click="OnTransferClicked" />
             </Grid>
+
+            <!-- Indicateur de chargement -->
+            <ProgressRing x:Name="LoadingRing"
+                          IsActive="False"
+                          Width="40"
+                          Height="40"
+                          HorizontalAlignment="Center" />
         </StackPanel>
     </Grid>
 </Page>
