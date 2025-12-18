@@ -17,7 +17,7 @@ public sealed partial class RegisterPage : Page
 
     private async void OnRegisterSubmitClicked(object sender, RoutedEventArgs e)
     {
-        if(string.IsNullOrWhiteSpace(FirstNameBox.Text) ||
+        if (string.IsNullOrWhiteSpace(FirstNameBox.Text) ||
             string.IsNullOrWhiteSpace(LastNameBox.Text) ||
             string.IsNullOrWhiteSpace(UsernameBox.Text) ||
             string.IsNullOrWhiteSpace(EmailBox.Text))
@@ -25,14 +25,14 @@ public sealed partial class RegisterPage : Page
             await new ContentDialog
             {
                 Title = "Champs requis",
-                Content= "Veuillez renseigner tous les champs.",
+                Content = "Veuillez renseigner tous les champs.",
                 CloseButtonText = "OK",
                 XamlRoot = XamlRoot
             }.ShowAsync();
             return;
         }
 
-        if(!Regex.IsMatch(EmailBox.Text, @"^\S+@\S+\.\S+$"))
+        if (!Regex.IsMatch(EmailBox.Text, @"^\S+@\S+\.\S+$"))
         {
             await new ContentDialog
             {
@@ -59,7 +59,7 @@ public sealed partial class RegisterPage : Page
         try
         {
             // Activez HTTP/2 clair au démarrage si nécessaire (Program.cs)
-            using var channel = GrpcChannel.ForAddress(Environment.GetEnvironmentVariable("MINIBANQUE_API_URL") ?? "http://localhost:5189");
+            using var channel = GrpcChannel.ForAddress(Environment.GetEnvironmentVariable("MINIBANQUE_API_URL") ?? Controller.Gestion.ServerAddress);
             var client = new BankService.BankServiceClient(channel);
 
             var request = new RegisterUserRequest
