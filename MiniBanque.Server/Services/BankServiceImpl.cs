@@ -4,6 +4,8 @@ using MiniBanque.Grpc.Model;
 using MySql.Data.MySqlClient;
 using System;
 using System.Threading.Tasks;
+using static MiniBanque.Grpc.BankService;
+
 
 
 namespace MiniBanque.Grpc.Services
@@ -47,6 +49,45 @@ namespace MiniBanque.Grpc.Services
                 Role = result.Role,
                 Nom = result.Nom,
                 Prenom = result.Prenom
+            };
+        }
+
+        public override async Task<RegisterUserResponse> RegisterUser(RegisterUserRequest request, ServerCallContext context)
+        {
+            // Validations de base
+            if (string.IsNullOrWhiteSpace(request.Username) ||
+                string.IsNullOrWhiteSpace(request.Password) ||
+                string.IsNullOrWhiteSpace(request.Nom) ||
+                string.IsNullOrWhiteSpace(request.Prenom) ||
+                string.IsNullOrWhiteSpace(request.Email))
+            {
+                return new RegisterUserResponse { Success = false, Message = "Tous les champs sont requis." };
+            }
+
+            var username = request.Username.Trim();
+            var email = request.Email.Trim().ToLowerInvariant();
+            var nom = request.Nom.Trim();
+            var prenom = request.Prenom.Trim();
+
+            // Unicité username/email
+            if (await _users.UsernameExistsAsync(username))
+            {
+                return new RegisterUserResponse { Success = false, Message = "Nom d'utilisateur déjà utilisé." };
+            }
+
+            if (await _users.EmailExistsAsync(email))
+            {
+                return new RegisterUserResponse { Success = false, Message = "Email déjà utilisé." };
+            }
+
+            // Création
+            var result = await _users.RegisterAsync(nom, prenom, email, username, request.Password);
+
+            return new RegisterUserResponse
+            {
+                Success = result.Success,
+                Message = result.Message,
+                UserId = result.UserId
             };
         }
 

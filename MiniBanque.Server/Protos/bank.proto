@@ -9,6 +9,9 @@ service BankService {
   // Authentification
   rpc Login (LoginRequest) returns (LoginResponse);
   
+    //Inscription
+  rpc RegisterUser (RegisterUserRequest) returns (RegisterUserResponse);
+
   // Gestion des comptes
   rpc CreateAccount (CreateAccountRequest) returns (AccountResponse);
   rpc GetUserAccounts (GetUserAccountsRequest) returns (GetUserAccountsResponse);
@@ -39,6 +42,21 @@ message LoginResponse {
   string nom = 5;
   string prenom = 6;
 }
+
+message RegisterUserRequest {
+  string nom = 1;
+  string prenom = 2;
+  string email = 3;
+  string username = 4;
+  string password = 5;
+}
+
+message RegisterUserResponse {
+  bool success = 1;
+  string message = 2;
+  int32 user_id = 3;
+}
+
 
 // Messages pour la création de compte
 message CreateAccountRequest {
