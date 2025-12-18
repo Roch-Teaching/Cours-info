@@ -5,17 +5,19 @@ using Grpc.Net.Client;
 using MiniBanque.Grpc;
 
 namespace MiniBanque.Client.Controller;
+
 class Gestion
 {
     // Contexte de session utilisateur
     public static int? CurrentUserId { get; private set; }
     public static string? CurrentUsername { get; private set; }
+    public static string ServerAddress { get; set; } = "http://localhost:5189";
 
     public static async Task<bool> connect(string name, string pssd)
     {
         //using var channel = GrpcChannel.ForAddress("http://172.20.10.8:5189");
 
-        using var channel = GrpcChannel.ForAddress("http://localhost:5189");
+        using var channel = GrpcChannel.ForAddress(ServerAddress);
         var client = new BankService.BankServiceClient(channel);
 
         Console.WriteLine("=== Mini Banque - Client gRPC ===\n");
@@ -51,7 +53,7 @@ class Gestion
             throw new InvalidOperationException("Aucun utilisateur connecté. Veuillez vous reconnecter.");
         }
 
-        using var channel = GrpcChannel.ForAddress("http://localhost:5189");
+        using var channel = GrpcChannel.ForAddress(ServerAddress);
         var client = new BankService.BankServiceClient(channel);
 
         var _ = await client.CreateAccountAsync(new CreateAccountRequest

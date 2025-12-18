@@ -4,6 +4,7 @@
         <StackPanel Margin="20">
             <Button Content="Retour" Click="OnCancelClicked" />
             <TextBox x:Name="IpAddressText" PlaceholderText="IP" Margin="0,5" />
+            <Button Content="Mettre à jour l'adresse" Click="OnUpdateAddressClicked" HorizontalAlignment="Stretch" Margin="0,0,0,15"/>
             <TextBox x:Name="UsernameText" PlaceholderText="User" Margin="0,5" />
             <TextBox x:Name="PasswordText" PlaceholderText="Pass" Margin="0,5" />
             <TextBox x:Name="CommandText" PlaceholderText="Cmd" Margin="0,5" />
