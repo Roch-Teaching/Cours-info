@@ -26,5 +26,11 @@ namespace MiniBanque.Client.View
             // Navigation vers la page d'historique complet
             this.Frame.Navigate(typeof(HistoryPage));
         }
+
+        private void OnCreateAccountClicked(object sender, RoutedEventArgs e)
+        {
+            // Navigation vers la page de création de compte
+            this.Frame.Navigate(typeof(CreateAccountPage));
+        }
     }
 }

@@ -1,0 +1,78 @@
+﻿<Page
+    x:Class="MiniBanque.Client.View.CreateAccountPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MiniBanque.Client.View"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Padding="24">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Margin="0,0,0,24">
+            <StackPanel>
+                <TextBlock Text="Ouvrir un compte" FontSize="26" FontWeight="Bold"/>
+                <TextBlock Text="Renseignez les informations ci-dessous pour ouvrir un nouveau compte" Opacity="0.6"/>
+            </StackPanel>
+            <Button Content="Se déconnecter" Click="OnLogoutClicked" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" CornerRadius="8" Padding="20" Grid.Row="0">
+                <StackPanel Spacing="16">
+                    <!--Message Erreur-->
+                    <TextBlock x:Name="ErrorMesageTextBlock"
+                               Foreground="Red"
+                               Visibility="Collapsed"
+                               TextWrapping="Wrap"
+                               Text="Veuillez corriger les champs invalides."/>
+
+                    <!--Type de compte-->
+                    <StackPanel>
+                        <TextBlock Text="Type de compte *" FontWeight="SemiBold"/>
+                        <ComboBox x:Name="AccountTypeComboBox" PlaceholderText="Sélectionnez un type">
+                            <ComboBoxItem Content="Compte courant" Tag="courant"/>
+                            <ComboBoxItem Content="Compte d'épargne" Tag="epargne"/>
+                            <ComboBoxItem Content="Compte à risque" Tag="risque"/>
+                        </ComboBox>
+                    </StackPanel>
+
+                    <!--Dépôt initial-->
+                    <StackPanel>
+                        <TextBlock Text="Dépôt initial (€)*" FontWeight="SemiBold"/>
+                        <NumberBox x:Name="InitialDepositNumberBox"
+                                   MinHeight="0"
+                                   SmallChange="50"
+                                   LargeChange="100"
+                                   SpinButtonPlacementMode="Compact"
+                                   PlaceholderText="Ex: 500.00"/>
+                    </StackPanel>
+
+                    <!--Conditions-->
+                    <CheckBox x:Name="TermsCheckBox"
+                              Content="J'accepte les conditions générales *"/>
+
+                    <!--Actions-->
+                    <StackPanel Orientation="Horizontal" Spacing="12">
+                        <Button x:Name="CreateButton"
+                                Content="Créer le compte"
+                                Style="{StaticResource AccentButtonStyle}"
+                                Click="OnCreateAccountClicked"/>
+                        <Button Content="Annuler"
+                                Background="Transparent"
+                                Click="OnSeeAllHistoryClicked"/>
+                    </StackPanel>
+
+                    <TextBlock Text="* Champs obligatoires" Opacity="0.6" FontSize="12"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</Page>

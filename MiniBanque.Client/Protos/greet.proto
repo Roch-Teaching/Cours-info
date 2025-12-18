@@ -1,0 +1,155 @@
+syntax = "proto3";
+
+option csharp_namespace = "MiniBanque.Grpc";
+
+package minibanque;
+
+// Service principal de la banque
+service BankService {
+  // Authentification
+  rpc Login (LoginRequest) returns (LoginResponse);
+
+  //Inscription
+  rpc RegisterUser (RegisterUserRequest) returns (RegisterUserResponse);
+
+  // Gestion des comptes
+  rpc CreateAccount (CreateAccountRequest) returns (AccountResponse);
+  rpc GetUserAccounts (GetUserAccountsRequest) returns (GetUserAccountsResponse);
+  rpc GetBalance (GetBalanceRequest) returns (BalanceResponse);
+  
+  // Opérations financières
+  rpc Deposit (DepositRequest) returns (TransactionResponse);
+  rpc Transfer (TransferRequest) returns (TransactionResponse);
+  
+  // Historique
+  rpc GetTransactions (GetTransactionsRequest) returns (GetTransactionsResponse);
+  
+  // Intérêts (pour comptes épargne)
+  rpc CalculateInterest (CalculateInterestRequest) returns (InterestResponse);
+}
+
+// Messages pour l'authentification
+message LoginRequest {
+  string username = 1;
+  string password = 2;
+}
+
+message LoginResponse {
+  bool success = 1;
+  string message = 2;
+  int32 user_id = 3;
+  string role = 4;
+  string nom = 5;
+  string prenom = 6;
+}
+
+message RegisterUserRequest {
+  string nom = 1;
+  string prenom = 2;
+  string email = 3;
+  string username = 4;
+  string password = 5;
+}
+
+message RegisterUserResponse {
+  bool success = 1;
+  string message = 2;
+  int32 user_id = 3;
+}
+
+// Messages pour la création de compte
+message CreateAccountRequest {
+  int32 user_id = 1;
+  string type = 2; // "risque", "epargne", "courant"
+  double initial_deposit = 3;
+}
+
+message AccountResponse {
+  bool success = 1;
+  string message = 2;
+  int32 account_id = 3;
+  double balance = 4;
+}
+
+// Messages pour consulter les comptes
+message GetUserAccountsRequest {
+  int32 user_id = 1;
+}
+
+message GetUserAccountsResponse {
+  bool success = 1;
+  repeated Account accounts = 2;
+}
+
+message Account {
+  int32 id_compte = 1;
+  string type = 2;
+  double solde = 3;
+}
+
+// Messages pour consulter le solde
+message GetBalanceRequest {
+  int32 account_id = 1;
+}
+
+message BalanceResponse {
+  bool success = 1;
+  double balance = 2;
+  string account_type = 3;
+}
+
+// Messages pour dépôt
+message DepositRequest {
+  int32 account_id = 1;
+  double amount = 2;
+  string description = 3;
+}
+
+message TransactionResponse {
+  bool success = 1;
+  string message = 2;
+  int32 transaction_id = 3;
+  double new_balance = 4;
+}
+
+// Messages pour virement
+message TransferRequest {
+  int32 source_account_id = 1;
+  int32 destination_account_id = 2;
+  double amount = 3;
+  string description = 4;
+}
+
+// Messages pour l'historique des transactions
+message GetTransactionsRequest {
+  int32 account_id = 1;
+  int32 limit = 2; // nombre max de transactions à retourner
+}
+
+message GetTransactionsResponse {
+  bool success = 1;
+  repeated Transaction transactions = 2;
+}
+
+message Transaction {
+  int32 id_transaction = 1;
+  string type_transaction = 2;
+  double montant = 3;
+  string date_transaction = 4;
+  string description = 5;
+  int32 id_compte_source = 6;
+  int32 id_compte_destination = 7;
+}
+
+// Messages pour les intérêts
+message CalculateInterestRequest {
+  int32 account_id = 1;
+}
+
+message InterestResponse {
+  bool success = 1;
+  string message = 2;
+  double interest_amount = 3;
+  double new_balance = 4;
+  double interest_rate = 5;
+}

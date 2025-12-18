@@ -18,8 +18,8 @@
                        HorizontalAlignment="Center"
                        Margin="0,0,0,20"/>
 
-            <TextBox x:Name="EmailBox" 
-                     PlaceholderText="Adresse email" 
+            <TextBox x:Name="usernameTextBox" 
+                     PlaceholderText="username" 
                      Header="Email"/>
 
             <PasswordBox x:Name="PasswordBox" 

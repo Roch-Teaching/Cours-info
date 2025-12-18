@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\victo\\Projet\\Cours-info\\MiniBanque.Client\\MiniBanque.Client.csproj": {}
+    "C:\\Users\\leofe\\Desktop\\Progra\\Cours-info-Client_UNO_Connection\\MiniBanque.Client\\MiniBanque.Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\victo\\Projet\\Cours-info\\MiniBanque.Client\\MiniBanque.Client.csproj": {
+    "C:\\Users\\leofe\\Desktop\\Progra\\Cours-info-Client_UNO_Connection\\MiniBanque.Client\\MiniBanque.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\victo\\Projet\\Cours-info\\MiniBanque.Client\\MiniBanque.Client.csproj",
+        "projectUniqueName": "C:\\Users\\leofe\\Desktop\\Progra\\Cours-info-Client_UNO_Connection\\MiniBanque.Client\\MiniBanque.Client.csproj",
         "projectName": "MiniBanque.Client",
-        "projectPath": "C:\\Users\\victo\\Projet\\Cours-info\\MiniBanque.Client\\MiniBanque.Client.csproj",
-        "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\victo\\Projet\\Cours-info\\MiniBanque.Client\\obj\\",
+        "projectPath": "C:\\Users\\leofe\\Desktop\\Progra\\Cours-info-Client_UNO_Connection\\MiniBanque.Client\\MiniBanque.Client.csproj",
+        "packagesPath": "C:\\Users\\leofe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\leofe\\Desktop\\Progra\\Cours-info-Client_UNO_Connection\\MiniBanque.Client\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "centralPackageVersionsManagementEnabled": true,
@@ -19,7 +19,7 @@
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\victo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\leofe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -50,7 +50,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0-desktop1.0": {
@@ -60,6 +60,23 @@
               "target": "Package",
               "version": "[8.4.0, )",
               "autoReferenced": true
+            },
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.33.2, )",
+              "versionCentrallyManaged": true
+            },
+            "Grpc.Net.Client": {
+              "target": "Package",
+              "version": "[2.71.0, )",
+              "versionCentrallyManaged": true
+            },
+            "Grpc.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.76.0, )",
+              "versionCentrallyManaged": true
             },
             "Microsoft.Extensions.Logging.Console": {
               "target": "Package",
@@ -170,6 +187,11 @@
               "autoReferenced": true
             }
           },
+          "centralPackageVersions": {
+            "Google.Protobuf": "3.33.2",
+            "Grpc.Net.Client": "2.71.0",
+            "Grpc.Tools": "2.76.0"
+          },
           "imports": [
             "net461",
             "net462",
@@ -186,7 +208,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -67,6 +67,12 @@
                         HorizontalAlignment="Stretch" 
                         Style="{StaticResource AccentButtonStyle}"
                         Height="40"/>
+
+                <Button Content="Ouvrir un compte"
+                        Click="OnCreateAccountClicked"
+                        HorizontalAlignment="Stretch"
+                        Style="{StaticResource AccentButtonStyle}"
+                        Height="40"/>
             </StackPanel>
 
 

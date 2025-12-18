@@ -12,6 +12,7 @@ using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Microsoft.UI.Xaml.Controls;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -22,20 +23,35 @@ namespace MiniBanque.Client.View;
 /// </summary>
 public sealed partial class LoginPage : Page
 {
+    private bool isConnected = false;
     public LoginPage()
     {
         this.InitializeComponent();
     }
 
-    private void OnLoginClicked(object sender, RoutedEventArgs e)
+    private async void OnLoginClicked(object sender, RoutedEventArgs e)
     {
-        // TODO: Plus tard, on ajoutera ici la validation gRPC
-
-        // Pour l'instant, on simule une connexion réussie
-        // On navigue vers le Dashboard (qu'on va créer juste après)
-        // Attention: cette ligne plantera tant que DashboardPage n'existe pas, 
-        // donc commente-la si tu n'as pas encore créé la page Dashboard.
-       this.Frame.Navigate(typeof(DashboardPage));
+        string username = usernameTextBox.Text;
+        string password = PasswordBox.Password;
+        if (username != null && password != null)
+        {
+            isConnected = await Controller.Gestion.connect(username, password);
+            if (isConnected)
+            {
+                this.Frame.Navigate(typeof(DashboardPage));
+            }
+            else
+            {
+                ContentDialog dialog = new ContentDialog
+                {
+                    Title = "Erreur de connexion",
+                    Content = "Échec de la connexion. Vérifiez vos identifiants.",
+                    CloseButtonText = "OK",
+                    XamlRoot = this.XamlRoot
+                };
+                await dialog.ShowAsync();
+            }
+        }
     }
 
     private void OnRegisterClicked(object sender, RoutedEventArgs e)
