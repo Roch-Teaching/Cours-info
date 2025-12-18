@@ -87,10 +87,10 @@
                             </StackPanel>
                         </Grid>
 
-                        <Grid Height="12" CornerRadius="6">
+                        <Grid x:Name="RatioGrid" Height="12" CornerRadius="6">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="3*"/>
                                 <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="0*"/>
                             </Grid.ColumnDefinitions>
                             <Rectangle Grid.Column="0" Fill="Green" Opacity="0.8"/>
                             <Rectangle Grid.Column="1" Fill="Red" Opacity="0.8"/>

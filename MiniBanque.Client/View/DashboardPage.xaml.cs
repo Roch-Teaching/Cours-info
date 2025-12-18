@@ -169,7 +169,7 @@ namespace MiniBanque.Client.View
                             grid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
                             grid.ColumnDefinitions.Add(new ColumnDefinition { Width = GridLength.Auto });
 
-                            var left = new StackPanel { Width = 60 };
+                            var left = new StackPanel { Width = 100 };
                             left.Children.Add(new TextBlock { Text = (tx.DateTransaction?.Split(' ').Length > 0 ? tx.DateTransaction.Split(' ')[0] : ""), FontWeight = Microsoft.UI.Text.FontWeights.Bold });
                             left.Children.Add(new TextBlock { Text = (tx.DateTransaction?.Split(' ').Length > 1 ? tx.DateTransaction.Split(' ')[1] : ""), FontSize = 11, Opacity = 0.5 });
 
@@ -212,6 +212,31 @@ namespace MiniBanque.Client.View
                             EntriesTextBlock.Text = $"+ {FormatCurrency(entries)}";
                         if (ExitsTextBlock != null)
                             ExitsTextBlock.Text = $"- {FormatCurrency(exits)}";
+
+                        try
+                        {
+                            double totalAmount = entries + exits;
+                            if (RatioGrid != null && RatioGrid.ColumnDefinitions.Count >= 2)
+                            {
+                                if (totalAmount <= 0)
+                                {
+                                    RatioGrid.ColumnDefinitions[0].Width = new Microsoft.UI.Xaml.GridLength(1, Microsoft.UI.Xaml.GridUnitType.Star);
+                                    RatioGrid.ColumnDefinitions[1].Width = new Microsoft.UI.Xaml.GridLength(0, Microsoft.UI.Xaml.GridUnitType.Star);
+                                }
+                                else
+                                {
+                                    double pEntries = entries / totalAmount; // 0..1
+                                    double leftStars = Math.Max(0.05, pEntries * 100);
+                                    double rightStars = Math.Max(0.05, (1 - pEntries) * 100);
+                                    RatioGrid.ColumnDefinitions[0].Width = new Microsoft.UI.Xaml.GridLength(leftStars, Microsoft.UI.Xaml.GridUnitType.Star);
+                                    RatioGrid.ColumnDefinitions[1].Width = new Microsoft.UI.Xaml.GridLength(rightStars, Microsoft.UI.Xaml.GridUnitType.Star);
+                                }
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            System.Diagnostics.Debug.WriteLine("Failed to update ratio grid: " + ex.Message);
+                        }
                     }
                 }
             }
