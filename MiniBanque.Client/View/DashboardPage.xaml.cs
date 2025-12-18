@@ -1,12 +1,13 @@
+using System;
+using System.Threading.Tasks;
+using Grpc.Net.Client;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Media.Imaging;
 using Microsoft.UI.Xaml.Shapes;
-using System;
-using System.Threading.Tasks;
+using MiniBanque.Client.Controller;
 using MiniBanque.Grpc;
-using Grpc.Net.Client;
 
 namespace MiniBanque.Client.View
 {
@@ -40,6 +41,58 @@ namespace MiniBanque.Client.View
             this.Frame.Navigate(typeof(CreateAccountPage));
         }
 
+        private async void OnLoaded(object sender, RoutedEventArgs e)
+        {
+            await RefreshDashboardAsync();
+        }
+
+        private async void OnRefreshClicked(object sender, RoutedEventArgs e)
+        {
+            // Désactiver temporairement le bouton de rafraîchissement si possible
+            if (sender is Button btn)
+            {
+                btn.IsEnabled = false;
+                try
+                {
+                    await RefreshDashboardAsync();
+                }
+                finally
+                {
+                    btn.IsEnabled = true;
+                }
+            }
+            else
+            {
+                await RefreshDashboardAsync();
+            }
+        }
+
+        private async Task RefreshDashboardAsync()
+        {
+            try
+            {
+                // Utilise la logique existante pour charger les données utilisateur / comptes
+                await LoadUserDataAsync();
+            }
+            catch (Exception ex)
+            {
+                if (TotalBalanceTextBlock != null)
+                    TotalBalanceTextBlock.Text = "—";
+                await ShowError(ex.Message);
+            }
+        }
+
+        private async Task ShowError(string message)
+        {
+            var dialog = new ContentDialog
+            {
+                Title = "Erreur",
+                Content = message,
+                CloseButtonText = "OK",
+                XamlRoot = this.XamlRoot
+            };
+            await dialog.ShowAsync();
+        }
         private async void Page_Loaded(object sender, RoutedEventArgs e)
         {
             await LoadUserDataAsync();

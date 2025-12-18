@@ -17,6 +17,7 @@
                 <TextBlock x:Name="GreetingTextBlock" Text="Bonjour, Utilisateur" FontSize="26" FontWeight="Bold"/>
                 <TextBlock Text="Bienvenue sur votre espace client" Opacity="0.6"/>
             </StackPanel>
+            <Button Content="Actualiser" Click=" OnRefreshClicked" HorizontalAlignment="Center" VerticalAlignment="Top"/>
             <Button Content="Se déconnecter" Click="OnLogoutClicked" HorizontalAlignment="Right" VerticalAlignment="Top"/>
         </Grid>
 
