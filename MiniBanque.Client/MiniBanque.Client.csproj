@@ -1,15 +1,15 @@
-﻿<Project Sdk="Uno.Sdk">
+<Project Sdk="Uno.Sdk">
     <PropertyGroup>
         <!--<TargetFrameworks>net10.0-desktop;net9.0-desktop</TargetFrameworks>-->
-        <TargetFrameworks>net9.0-desktop</TargetFrameworks>
-        
+        <TargetFrameworks>net10.0-desktop;net9.0-desktop</TargetFrameworks>
+
         <OutputType>Exe</OutputType>
         <UnoSingleProject>true</UnoSingleProject>
 
         <!-- Display name -->
         <ApplicationTitle>MiniBanque.Client</ApplicationTitle>
         <!-- App Identifier -->
-        <ApplicationId>com.companyname.minibanque-client</ApplicationId>
+        <ApplicationId>be.hel-is3.minibanque-client</ApplicationId>
         <!-- Versions -->
         <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
         <ApplicationVersion>1</ApplicationVersion>
