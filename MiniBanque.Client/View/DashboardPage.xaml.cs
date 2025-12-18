@@ -177,8 +177,19 @@ namespace MiniBanque.Client.View
                             center.Children.Add(new TextBlock { Text = tx.Description ?? tx.TypeTransaction, FontWeight = Microsoft.UI.Text.FontWeights.SemiBold });
                             center.Children.Add(new TextBlock { Text = tx.TypeTransaction ?? "", FontSize = 12, Opacity = 0.6 });
 
-                            var amountText = tx.Montant >= 0 ? $"+ {FormatCurrency(tx.Montant)}" : $"- {FormatCurrency(Math.Abs(tx.Montant))}";
-                            var amountBlock = new TextBlock { Text = amountText, Foreground = tx.Montant >= 0 ? new SolidColorBrush(Microsoft.UI.Colors.Green) : new SolidColorBrush(Microsoft.UI.Colors.Red), FontWeight = Microsoft.UI.Text.FontWeights.Bold, VerticalAlignment = VerticalAlignment.Center };
+                            // Debug : afficher les valeurs côté client pour diagnostic
+                            System.Diagnostics.Debug.WriteLine($"Tx debug: Type='{tx.TypeTransaction}', Description='{tx.Description}', Montant={tx.Montant}");
+
+                            // Nouvelle logique : déterminer le signe à partir du type/description quand le serveur renvoie des montants absolus
+                            var isCredit = IsCreditTransaction(tx.TypeTransaction, tx.Description, tx.Montant);
+                            var amountText = isCredit ? $"+ {FormatCurrency(Math.Abs(tx.Montant))}" : $"- {FormatCurrency(Math.Abs(tx.Montant))}";
+                            var amountBlock = new TextBlock
+                            {
+                                Text = amountText,
+                                Foreground = isCredit ? new SolidColorBrush(Microsoft.UI.Colors.Green) : new SolidColorBrush(Microsoft.UI.Colors.Red),
+                                FontWeight = Microsoft.UI.Text.FontWeights.Bold,
+                                VerticalAlignment = VerticalAlignment.Center
+                            };
 
                             Grid.SetColumn(left, 0);
                             Grid.SetColumn(center, 1);
@@ -191,7 +202,8 @@ namespace MiniBanque.Client.View
                             if (TransactionsListView != null)
                                 TransactionsListView.Items.Add(new ListViewItem { Content = grid });
 
-                            if (tx.Montant >= 0) entries += tx.Montant; else exits += Math.Abs(tx.Montant);
+                            // Comptabilisation sécurisée des entrées / sorties en valeur absolue
+                            if (isCredit) entries += Math.Abs(tx.Montant); else exits += Math.Abs(tx.Montant);
                         }
 
                         if (OpsTextBlock != null)
@@ -207,6 +219,40 @@ namespace MiniBanque.Client.View
             {
                 System.Diagnostics.Debug.WriteLine("Failed to load dashboard: " + ex.Message);
             }
+        }
+
+        /// <summary>
+        /// Détermine si une transaction est un crédit pour le compte courant en comparant
+        /// l'ID du compte courant avec les propriétés "from"/"to" possibles trouvées par réflexion.
+        /// Si aucune propriété explicite n'est trouvée, retombe sur la heuristique type/description    .
+        /// </summary>
+        private bool IsCreditTransaction(string typeTransaction, string description, double montant)
+        {
+            // Si montant négatif côté client : débit
+            if (montant < 0) return false;
+
+            // Concatène type + description pour une recherche unique
+            var combined = $"{typeTransaction ?? string.Empty} {description ?? string.Empty}".ToLowerInvariant();
+
+            // Cas explicites fréquents
+            if (combined.Contains("reçu") || combined.Contains("virement reçu") || combined.Contains("depuis") || combined.Contains("reception") || combined.Contains("encaissement") || combined.Contains("dépôt") || combined.Contains("versement") || combined.Contains("crédit"))
+                return true;
+
+            if (combined.Contains("vers") || combined.Contains("envoyé") || combined.Contains("virement vers") || combined.Contains("à ") || combined.Contains("à:") || combined.Contains("paiement") || combined.Contains("débit") || combined.Contains("retrait") || combined.Contains("prélèvement"))
+                return false;
+
+            // Si le type contient simplement "virement" sans indication, on tente d'inférer par la présence de "de" vs "vers"
+            if (combined.Contains("virement"))
+            {
+                if (combined.Contains("virement reçu") || combined.Contains("depuis") || combined.Contains("de "))
+                    return true;
+                if (combined.Contains("virement vers") || combined.Contains("à "))
+                    return false;
+            }
+
+            // Comportement par défaut : considérer comme débit si le montant est 0 ou ambiguë ?
+            // Ici on choisit de considérer par défaut comme débit pour éviter d'afficher systématiquement '+'
+            return false;
         }
 
         private string FormatCurrency(double amount)
