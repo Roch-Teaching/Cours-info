@@ -3,7 +3,8 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:MiniBanque.Client.View"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    Loaded="Page_Loaded">
 
     <Grid Padding="24">
         <Grid.RowDefinitions>
@@ -13,7 +14,7 @@
 
         <Grid Grid.Row="0" Margin="0,0,0,24">
             <StackPanel>
-                <TextBlock Text="Bonjour, Utilisateur" FontSize="26" FontWeight="Bold"/>
+                <TextBlock x:Name="GreetingTextBlock" Text="Bonjour, Utilisateur" FontSize="26" FontWeight="Bold"/>
                 <TextBlock Text="Bienvenue sur votre espace client" Opacity="0.6"/>
             </StackPanel>
             <Button Content="Se déconnecter" Click="OnLogoutClicked" HorizontalAlignment="Right" VerticalAlignment="Top"/>
@@ -30,37 +31,13 @@
                 <Border Background="{ThemeResource CardBackgroundFillColorDefaultBrush}" CornerRadius="8" Padding="16">
                     <StackPanel>
                         <TextBlock Text="SOLDE TOTAL" Opacity="0.8" FontSize="12"/>
-                        <TextBlock Text="5 250,00 €" FontSize="36" FontWeight="Bold" Foreground="{StaticResource AccentAaTextFillColorPrimaryBrush}"/>
+                        <TextBlock x:Name="TotalBalanceTextBlock" Text="0,00 €" FontSize="36" FontWeight="Bold" Foreground="{StaticResource AccentAaTextFillColorPrimaryBrush}"/>
                     </StackPanel>
                 </Border>
 
                 <TextBlock Text="Mes Comptes" FontWeight="SemiBold" FontSize="18"/>
 
-                <ListView SelectionMode="None" BorderThickness="1" BorderBrush="#11000000" CornerRadius="8">
-                    <ListView.Items>
-                        <ListViewItem>
-                            <StackPanel Orientation="Horizontal" Spacing="16" Padding="12">
-                                <FontIcon Glyph="&#xE825;" FontFamily="Segoe MDL2 Assets" FontSize="24"/>
-                                <StackPanel Width="150">
-                                    <TextBlock Text="Compte Courant" FontWeight="Bold"/>
-                                    <TextBlock Text="**** 1234" FontSize="12" Opacity="0.5"/>
-                                </StackPanel>
-                                <TextBlock Text="1 250,00 €" FontWeight="Bold" VerticalAlignment="Center"/>
-                            </StackPanel>
-                        </ListViewItem>
-
-                        <ListViewItem>
-                            <StackPanel Orientation="Horizontal" Spacing="16" Padding="12">
-                                <FontIcon Glyph="&#xE7C1;" FontFamily="Segoe MDL2 Assets" FontSize="24"/>
-                                <StackPanel Width="150">
-                                    <TextBlock Text="Livret A" FontWeight="Bold"/>
-                                    <TextBlock Text="**** 5678" FontSize="12" Opacity="0.5"/>
-                                </StackPanel>
-                                <TextBlock Text="4 000,00 €" FontWeight="Bold" VerticalAlignment="Center"/>
-                            </StackPanel>
-                        </ListViewItem>
-                    </ListView.Items>
-                </ListView>
+                <ListView x:Name="AccountsListView" SelectionMode="None" BorderThickness="1" BorderBrush="#11000000" CornerRadius="8"/>
 
                 <Button Content="Effectuer un virement" 
                         Click="OnNewTransferClicked"
@@ -96,16 +73,16 @@
 
                             <StackPanel Grid.Column="0">
                                 <TextBlock Text="Entrées" FontSize="12" Opacity="0.6"/>
-                                <TextBlock Text="+ 2 100 €" Foreground="Green" FontWeight="Bold" FontSize="18"/>
+                                <TextBlock x:Name="EntriesTextBlock" Text="+ 0,00 €" Foreground="Green" FontWeight="Bold" FontSize="18"/>
                             </StackPanel>
 
                             <StackPanel Grid.Column="1">
                                 <TextBlock Text="Sorties" FontSize="12" Opacity="0.6"/>
-                                <TextBlock Text="- 704,30 €" Foreground="Red" FontWeight="Bold" FontSize="18"/>
+                                <TextBlock x:Name="ExitsTextBlock" Text="- 0,00 €" Foreground="Red" FontWeight="Bold" FontSize="18"/>
                             </StackPanel>
 
                             <StackPanel Grid.Column="2" VerticalAlignment="Center" Background="#11000000" Padding="10,5" CornerRadius="4">
-                                <TextBlock Text="3 Ops" FontWeight="Bold" FontSize="12"/>
+                                <TextBlock x:Name="OpsTextBlock" Text="0 Ops" FontWeight="Bold" FontSize="12"/>
                             </StackPanel>
                         </Grid>
 
@@ -137,68 +114,7 @@
                             Click="OnSeeAllHistoryClicked"/>
                 </Grid>
 
-                <ListView Grid.Row="2" SelectionMode="None" BorderThickness="1" BorderBrush="#11000000" CornerRadius="8">
-                    <ListView.Items>
-
-                        <ListViewItem>
-                            <Grid Padding="12,8">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="Auto"/>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="Auto"/>
-                                </Grid.ColumnDefinitions>
-                                <StackPanel Grid.Column="0" Width="60">
-                                    <TextBlock Text="02 Déc" FontWeight="Bold"/>
-                                    <TextBlock Text="14:30" FontSize="11" Opacity="0.5"/>
-                                </StackPanel>
-                                <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="12,0">
-                                    <TextBlock Text="Supermarché Carrefour" FontWeight="SemiBold"/>
-                                    <TextBlock Text="Alimentation" FontSize="12" Opacity="0.6"/>
-                                </StackPanel>
-                                <TextBlock Grid.Column="2" Text="- 54,30 €" Foreground="Red" FontWeight="Bold" VerticalAlignment="Center"/>
-                            </Grid>
-                        </ListViewItem>
-
-                        <ListViewItem>
-                            <Grid Padding="12,8">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="Auto"/>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="Auto"/>
-                                </Grid.ColumnDefinitions>
-                                <StackPanel Grid.Column="0" Width="60">
-                                    <TextBlock Text="01 Déc" FontWeight="Bold"/>
-                                    <TextBlock Text="09:00" FontSize="11" Opacity="0.5"/>
-                                </StackPanel>
-                                <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="12,0">
-                                    <TextBlock Text="Virement Salaire" FontWeight="SemiBold"/>
-                                    <TextBlock Text="Employeur" FontSize="12" Opacity="0.6"/>
-                                </StackPanel>
-                                <TextBlock Grid.Column="2" Text="+ 2 100,00 €" Foreground="Green" FontWeight="Bold" VerticalAlignment="Center"/>
-                            </Grid>
-                        </ListViewItem>
-
-                        <ListViewItem>
-                            <Grid Padding="12,8">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="Auto"/>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="Auto"/>
-                                </Grid.ColumnDefinitions>
-                                <StackPanel Grid.Column="0" Width="60">
-                                    <TextBlock Text="28 Nov" FontWeight="Bold"/>
-                                    <TextBlock Text="18:45" FontSize="11" Opacity="0.5"/>
-                                </StackPanel>
-                                <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="12,0">
-                                    <TextBlock Text="Loyer Décembre" FontWeight="SemiBold"/>
-                                    <TextBlock Text="Virement permanent" FontSize="12" Opacity="0.6"/>
-                                </StackPanel>
-                                <TextBlock Grid.Column="2" Text="- 650,00 €" Foreground="Red" FontWeight="Bold" VerticalAlignment="Center"/>
-                            </Grid>
-                        </ListViewItem>
-
-                    </ListView.Items>
-                </ListView>
+                <ListView x:Name="TransactionsListView" Grid.Row="2" SelectionMode="None" BorderThickness="1" BorderBrush="#11000000" CornerRadius="8"/>
             </Grid>
 
         </Grid>
